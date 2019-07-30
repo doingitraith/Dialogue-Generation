@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Jakob\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Jakob\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_DialogueGeneration.-1029389025.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Jakob\Documents\Repositories\Dialogue-Generation\DialogueGeneration" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="SimpleCameraController.cs" t="Include" />
+        </e>
+        <e p="Tracery" t="Include">
+          <e p="Demo" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="DemoPanel.cs" t="Include" />
+            </e>
+          </e>
+          <e p="JSON" t="Include">
+            <e p="Editor" t="Include">
+              <e p="JSONChecker.cs" t="Include" />
+            </e>
+            <e p="JSONObject.cs" t="Include" />
+            <e p="JSONTemplates.cs" t="Include" />
+            <e p="readme.txt" t="Include" />
+            <e p="VectorTemplates.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="GrammarToken.cs" t="Include" />
+            <e p="JSONObjectExtensions.cs" t="Include" />
+            <e p="Modifiers.cs" t="Include" />
+            <e p="TraceryGrammar.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TutorialInfo" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ReadmeEditor.cs" t="Include" />
+            </e>
+            <e p="Readme.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="DialogueGeneration.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

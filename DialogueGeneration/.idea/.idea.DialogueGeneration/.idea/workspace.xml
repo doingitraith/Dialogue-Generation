@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e847a114-592e-451b-a5be-37a1c70f5c36" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+              <folding>
+                <marker date="1564412172167" expanded="false" signature="6:120" ph="..." />
+                <marker date="1564412172167" expanded="true" signature="180:718" ph="{...}" />
+                <marker date="1564412172167" expanded="true" signature="358:477" ph="{...}" />
+                <marker date="1564412172167" expanded="true" signature="507:604" ph="{...}" />
+                <marker date="1564412172167" expanded="true" signature="635:716" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Tracery/Scripts/TraceryGrammar.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-15">
+              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+              <folding>
+                <marker date="1564407340237" expanded="false" signature="6:104" ph="..." />
+                <marker date="1564407340237" expanded="true" signature="128:8474" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="133:228" ph="/// A Grammar object as described in @GalaxyKate's tracery.io. ... " />
+                <marker date="1564407340237" expanded="true" signature="258:8472" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="267:393" ph="/// Finds escape characters that are not preceeded by an odd number of escape characters. ... " />
+                <marker date="1564407340237" expanded="true" signature="537:606" ph="/// The raw json grammar string. ... " />
+                <marker date="1564407340237" expanded="true" signature="642:717" ph="/// Key/value store for grammar rules. ... " />
+                <marker date="1564407340237" expanded="true" signature="754:828" ph="/// Key/value store for savable data. ... " />
+                <marker date="1564407340237" expanded="true" signature="866:931" ph="/// Modifier function table. ... " />
+                <marker date="1564407340237" expanded="true" signature="1042:1719" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="1115:1189" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="1299:1676" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="1758:1810" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="1816:2087" ph="/// Resolves the default starting symbol &quot;##origin##&quot;. ... " />
+                <marker date="1564407340237" expanded="true" signature="2139:2217" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="2281:2770" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="2314:2382" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="2817:4943" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="2858:2889" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="3019:4915" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="3069:3182" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="3207:3319" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="3341:4787" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="3489:3532" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="3886:4025" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="4249:4365" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="4460:4554" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="4836:4907" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="4949:5200" ph="/// Add a modifier to the modifier lookup. ... " />
+                <marker date="1564407340237" expanded="true" signature="5269:5311" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="5415:5551" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="5442:5489" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="5557:5855" ph="/// Applies found modifier functions to a symbol. ... " />
+                <marker date="1564407340237" expanded="true" signature="5928:6102" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="6109:6467" ph="/// Resolve the ##symbol## from save data first, then a grammar rule if nothing saved, ... " />
+                <marker date="1564407340237" expanded="true" signature="6517:7277" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="6559:6587" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="6616:6663" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="6704:6732" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="6777:6843" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="6884:6912" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="6941:7024" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="7060:7250" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="7099:7157" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="7193:7242" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="7283:7536" ph="/// Resolves and saves the content inside [action] brackets. ... " />
+                <marker date="1564407340237" expanded="true" signature="7603:7838" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="7685:7722" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="7750:7799" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="7844:7992" ph="/// Pops the most recent entry for the save data key. ... " />
+                <marker date="1564407340237" expanded="true" signature="8033:8277" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="8058:8083" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="8110:8135" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="8227:8271" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="8313:8468" ph="{...}" />
+                <marker date="1564407340237" expanded="true" signature="8388:8443" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Tracery/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Tracery/JSON/readme.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Tracery/Demo/Grammars/hero-grammar.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Grammars/introduction_grammar.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Tracery/Scripts/TraceryGrammar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Readme.asset" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Tracery/Scripts/TraceryGrammar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tracery/Demo/Grammars/hero-grammar.json" />
+        <option value="$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Grammars/introduction_grammar.json" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/.idea.DialogueGeneration/.idea/indexLayout.xml" />
+        <option value="$PROJECT_DIR$/.idea/.idea.DialogueGeneration/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="374" />
+    <option name="y" value="240" />
+    <option name="width" value="2252" />
+    <option name="height" value="1440" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e847a114-592e-451b-a5be-37a1c70f5c36" name="Default Changelist" comment="" />
+      <created>1564406382265</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564406382265</updated>
+      <workItem from="1564406391866" duration="938000" />
+      <workItem from="1564407574918" duration="810000" />
+      <workItem from="1564408616939" duration="4083000" />
+      <workItem from="1564417722416" duration="116000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5947000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2603022" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Unity" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Unit Tests" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="15" side_tool="true" visible="true" weight="0.3297362" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Readme.asset">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+          <folding>
+            <marker date="1564412172167" expanded="false" signature="6:120" ph="..." />
+            <marker date="1564412172167" expanded="true" signature="180:718" ph="{...}" />
+            <marker date="1564412172167" expanded="true" signature="358:477" ph="{...}" />
+            <marker date="1564412172167" expanded="true" signature="507:604" ph="{...}" />
+            <marker date="1564412172167" expanded="true" signature="635:716" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Tracery/Scripts/TraceryGrammar.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <folding>
+            <marker date="1564407340237" expanded="false" signature="6:104" ph="..." />
+            <marker date="1564407340237" expanded="true" signature="128:8474" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="133:228" ph="/// A Grammar object as described in @GalaxyKate's tracery.io. ... " />
+            <marker date="1564407340237" expanded="true" signature="258:8472" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="267:393" ph="/// Finds escape characters that are not preceeded by an odd number of escape characters. ... " />
+            <marker date="1564407340237" expanded="true" signature="537:606" ph="/// The raw json grammar string. ... " />
+            <marker date="1564407340237" expanded="true" signature="642:717" ph="/// Key/value store for grammar rules. ... " />
+            <marker date="1564407340237" expanded="true" signature="754:828" ph="/// Key/value store for savable data. ... " />
+            <marker date="1564407340237" expanded="true" signature="866:931" ph="/// Modifier function table. ... " />
+            <marker date="1564407340237" expanded="true" signature="1042:1719" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="1115:1189" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="1299:1676" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="1758:1810" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="1816:2087" ph="/// Resolves the default starting symbol &quot;##origin##&quot;. ... " />
+            <marker date="1564407340237" expanded="true" signature="2139:2217" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="2281:2770" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="2314:2382" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="2817:4943" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="2858:2889" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="3019:4915" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="3069:3182" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="3207:3319" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="3341:4787" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="3489:3532" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="3886:4025" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="4249:4365" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="4460:4554" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="4836:4907" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="4949:5200" ph="/// Add a modifier to the modifier lookup. ... " />
+            <marker date="1564407340237" expanded="true" signature="5269:5311" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="5415:5551" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="5442:5489" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="5557:5855" ph="/// Applies found modifier functions to a symbol. ... " />
+            <marker date="1564407340237" expanded="true" signature="5928:6102" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="6109:6467" ph="/// Resolve the ##symbol## from save data first, then a grammar rule if nothing saved, ... " />
+            <marker date="1564407340237" expanded="true" signature="6517:7277" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="6559:6587" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="6616:6663" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="6704:6732" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="6777:6843" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="6884:6912" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="6941:7024" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="7060:7250" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="7099:7157" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="7193:7242" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="7283:7536" ph="/// Resolves and saves the content inside [action] brackets. ... " />
+            <marker date="1564407340237" expanded="true" signature="7603:7838" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="7685:7722" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="7750:7799" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="7844:7992" ph="/// Pops the most recent entry for the save data key. ... " />
+            <marker date="1564407340237" expanded="true" signature="8033:8277" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="8058:8083" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="8110:8135" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="8227:8271" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="8313:8468" ph="{...}" />
+            <marker date="1564407340237" expanded="true" signature="8388:8443" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Tracery/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-90" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Tracery/JSON/readme.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Tracery/Demo/Grammars/hero-grammar.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Grammars/introduction_grammar.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

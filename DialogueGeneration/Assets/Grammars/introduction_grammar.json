@@ -1,0 +1,12 @@
+{
+  "setGender": ["[gender:#male#]", "[gender:#female#]"],
+  "male": ["[they:he][them:him][their:his][theirs:his][address:#maleAddress#]"],
+  "female": ["[they:she][them:her][their:her][theirs:hers][address:#femaleAddress#]"],
+  "maleAddress": ["Sir","pal", "friend"],
+  "femaleAddress": ["Mam", "Madam", "Mademoiselle"],
+  "timeOfDay":  ["afternoon", "evening", "morning", "day"],
+  "timeComment": ["wonderful", "radiant", "great", "beautiful"],
+  "offerHelp":  ["How may I help you today?", "How can I help you on this #timeComment# #timeOfDay#?", "What can I do for you?", "What do you want?", "Is there anything I can do for you?"],
+  "greeting":   ["Good #timeOfDay#, #address#.", "Welcome, #address#.", "Good to see you, #address#.", "Please, #address# come in."],
+  "origin":     ["#[#setGender#]greeting# #[timeOfDay:#timeOfDay#]offerHelp#"]
+}

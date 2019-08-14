@@ -1304,12 +1304,15 @@ MonoBehaviour:
   m_Text: "{\r\n  \"setGender\": [\"[gender:#male#]\", \"[gender:#female#]\"],\r\n
     \ \"male\": [\"[they:he][them:him][their:his][theirs:his][address:#maleAddress#]\"],\r\n
     \ \"female\": [\"[they:she][them:her][their:her][theirs:hers][address:#femaleAddress#]\"],\r\n
-    \ \"maleAddress\": [\"Sir\",\"Pal\", \"Friend\"],\r\n  \"femaleAddress\": [\"Mam\",
-    \"Madam\"],\r\n  \"timeOfDay\":  [\"afternoon\", \"evening\", \"morning\", \"day\"],\r\n
-    \ \"offerHelp\":  [\"How may I help you today?\", \"What can I do for you?\",
-    \"What do you want?\", \"Is there anything I can do for you?\"],\r\n  \"greeting\":
-    \  [\"Good #timeOfDay#, #address#.\", \"Welcome, #address#.\", \"Good to see you,
-    #address#.\"],\r\n  \"origin\":     [\"#[#setGender#]greeting# #offerHelp#\"]\r\n}"
+    \ \"maleAddress\": [\"Sir\",\"pal\", \"friend\"],\r\n  \"femaleAddress\": [\"Mam\",
+    \"Madam\", \"Mademoiselle\"],\r\n  \"timeOfDay\":  [\"afternoon\", \"evening\",
+    \"morning\", \"day\"],\r\n  \"timeComment\": [\"wonderful\", \"radiant\", \"great\",
+    \"beautiful\"],\r\n  \"offerHelp\":  [\"How may I help you today?\", \"How can
+    I help you on this #timeComment# #timeOfDay#?\", \"What can I do for you?\", \"What
+    do you want?\", \"Is there anything I can do for you?\"],\r\n  \"greeting\":   [\"Good
+    #timeOfDay#, #address#.\", \"Welcome, #address#.\", \"Good to see you, #address#.\",
+    \"Please, #address# come in.\"],\r\n  \"origin\":     [\"#[#setGender#]greeting#
+    #[timeOfDay:#timeOfDay#]offerHelp#\"]\r\n}"
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -1887,6 +1890,49 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!1 &1817805854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1817805856}
+  - component: {fileID: 1817805855}
+  m_Layer: 0
+  m_Name: PythonTest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1817805855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817805854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d418ab4ab2d581345a018abdbbb430cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1817805856
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817805854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 526.873, y: 275.48203, z: -667.6021}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2095885439
 GameObject:
   m_ObjectHideFlags: 0
@@ -1960,12 +2006,15 @@ MonoBehaviour:
   m_Text: "{\r\n  \"setGender\": [\"[gender:#male#]\", \"[gender:#female#]\"],\r\n
     \ \"male\": [\"[they:he][them:him][their:his][theirs:his][address:#maleAddress#]\"],\r\n
     \ \"female\": [\"[they:she][them:her][their:her][theirs:hers][address:#femaleAddress#]\"],\r\n
-    \ \"maleAddress\": [\"Sir\",\"Pal\", \"Friend\"],\r\n  \"femaleAddress\": [\"Mam\",
-    \"Madam\"],\r\n  \"timeOfDay\":  [\"afternoon\", \"evening\", \"morning\", \"day\"],\r\n
-    \ \"offerHelp\":  [\"How may I help you today?\", \"What can I do for you?\",
-    \"What do you want?\", \"Is there anything I can do for you?\"],\r\n  \"greeting\":
-    \  [\"Good #timeOfDay#, #address#.\", \"Welcome, #address#.\", \"Good to see you,
-    #address#.\"],\r\n  \"origin\":     [\"#[#setGender#]greeting# #offerHelp#\"]\r\n}"
+    \ \"maleAddress\": [\"Sir\",\"pal\", \"friend\"],\r\n  \"femaleAddress\": [\"Mam\",
+    \"Madam\", \"Mademoiselle\"],\r\n  \"timeOfDay\":  [\"afternoon\", \"evening\",
+    \"morning\", \"day\"],\r\n  \"timeComment\": [\"wonderful\", \"radiant\", \"great\",
+    \"beautiful\"],\r\n  \"offerHelp\":  [\"How may I help you today?\", \"How can
+    I help you on this #timeComment# #timeOfDay#?\", \"What can I do for you?\", \"What
+    do you want?\", \"Is there anything I can do for you?\"],\r\n  \"greeting\":   [\"Good
+    #timeOfDay#, #address#.\", \"Welcome, #address#.\", \"Good to see you, #address#.\",
+    \"Please, #address# come in.\"],\r\n  \"origin\":     [\"#[#setGender#]greeting#
+    #[timeOfDay:#timeOfDay#]offerHelp#\"]\r\n}"
 --- !u!222 &2095885442
 CanvasRenderer:
   m_ObjectHideFlags: 0

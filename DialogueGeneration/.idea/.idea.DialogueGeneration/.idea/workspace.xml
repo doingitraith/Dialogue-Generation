@@ -5,10 +5,22 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DialogueGeneration/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DialogueGeneration/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DialogueGeneration/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DialogueGeneration/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DialogueGeneration/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DialogueGeneration/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tracery/Demo/Scenes/DemoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tracery/Demo/Scenes/DemoScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/README.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/introduction.grammar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/introduction.grammar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/introduction.marisa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/introduction.marisa.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/introduction.meanings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/introduction.meanings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/introduction.stats" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/introduction.stats.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/productionist.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Expressionist/productionist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PythonTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PythonTest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/marisa_trie.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/marisa_trie.pyd.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="240">
+              <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
               <folding>
                 <marker date="1565712657795" expanded="true" signature="6:169" ph="..." />
                 <marker date="1565712657795" expanded="true" signature="229:1753" ph="{...}" />
@@ -36,16 +48,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PythonTest.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Expressionist/PythonTest.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+            <state relative-caret-position="270">
+              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
               <folding>
-                <marker date="1565792474888" expanded="true" signature="6:150" ph="..." />
-                <marker date="1565792474888" expanded="true" signature="191:1784" ph="{...}" />
-                <marker date="1565792474888" expanded="true" signature="263:1703" ph="{...}" />
-                <marker date="1565792474888" expanded="true" signature="312:1688" ph="{...}" />
-                <marker date="1565792474888" expanded="true" signature="1761:1782" ph="{...}" />
+                <marker date="1565883017087" expanded="false" signature="6:150" ph="..." />
+                <marker date="1565883017087" expanded="true" signature="191:2707" ph="{...}" />
+                <marker date="1565883017087" expanded="true" signature="263:2542" ph="{...}" />
+                <marker date="1565883017087" expanded="true" signature="312:2527" ph="{...}" />
+                <marker date="1565883017087" expanded="true" signature="1223:1710" ph="/* StreamReader reader = new StreamReader(Application.dataPath + @&quot;\Scripts\Expressionist\productionist.py&quot;); ... */" />
+                <marker date="1565883017087" expanded="true" signature="2581:2626" ph="{...}" />
+                <marker date="1565883017087" expanded="true" signature="2684:2705" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -54,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5749F69-DE19-46FF-97B4-7B2C57B7EEC8/a2/36ea1a51/Py.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
+            <state relative-caret-position="705">
               <caret line="49" column="6" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
             </state>
           </provider>
@@ -63,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5749F69-DE19-46FF-97B4-7B2C57B7EEC8/cd/87425864/ImportHook.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="2370">
               <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
             </state>
           </provider>
@@ -136,29 +150,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Tracery/JSON/readme.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Tracery/Demo/Grammars/hero-grammar.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Grammars/introduction_grammar.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -174,8 +165,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A746901E-010D-43B2-8D1F-ABC944D48B5F/47/73062176/PythonEngine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5749F69-DE19-46FF-97B4-7B2C57B7EEC8/a2/36ea1a51/Py.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Readme.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Expressionist/PythonTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5749F69-DE19-46FF-97B4-7B2C57B7EEC8/cd/87425864/ImportHook.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PythonTest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -185,6 +176,7 @@
         <option value="$PROJECT_DIR$/Assets/Grammars/introduction_grammar.json" />
         <option value="$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PythonTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Expressionist/PythonTest.cs" />
       </list>
     </option>
   </component>
@@ -209,15 +201,6 @@
     </navigator>
     <panes>
       <pane id="UnityExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
@@ -325,11 +308,12 @@
       <workItem from="1565712961612" duration="1847000" />
       <workItem from="1565740864540" duration="590000" />
       <workItem from="1565780731391" duration="7595000" />
+      <workItem from="1565867972595" duration="7911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34690000" />
+    <option name="totallyTimeSpent" value="42601000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -343,7 +327,7 @@
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29052198" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29464287" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -395,14 +379,14 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Tracery/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-90" />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
         </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-90" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Tracery/JSON/VectorTemplates.cs">
@@ -482,18 +466,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5749F69-DE19-46FF-97B4-7B2C57B7EEC8/a2/36ea1a51/Py.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding>
-            <marker date="1565712657795" expanded="true" signature="6:169" ph="..." />
-            <marker date="1565712657795" expanded="true" signature="229:1753" ph="{...}" />
-            <marker date="1565712657795" expanded="true" signature="407:1512" ph="{...}" />
-            <marker date="1565712657795" expanded="true" signature="529:1500" ph="/* Iron Python ... */" />
-            <marker date="1565712657795" expanded="true" signature="1542:1639" ph="{...}" />
-            <marker date="1565712657795" expanded="true" signature="1670:1751" ph="{...}" />
-          </folding>
+        <state relative-caret-position="705">
+          <caret line="49" column="6" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5749F69-DE19-46FF-97B4-7B2C57B7EEC8/cd/87425864/ImportHook.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2370">
+          <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -579,30 +562,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5749F69-DE19-46FF-97B4-7B2C57B7EEC8/a2/36ea1a51/Py.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="49" column="6" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5749F69-DE19-46FF-97B4-7B2C57B7EEC8/cd/87425864/ImportHook.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PythonTest.cs">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="28" column="98" selection-start-line="28" selection-start-column="98" selection-end-line="28" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+          <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
           <folding>
-            <marker date="1565792474888" expanded="true" signature="6:150" ph="..." />
-            <marker date="1565792474888" expanded="true" signature="191:1784" ph="{...}" />
-            <marker date="1565792474888" expanded="true" signature="263:1703" ph="{...}" />
-            <marker date="1565792474888" expanded="true" signature="312:1688" ph="{...}" />
-            <marker date="1565792474888" expanded="true" signature="1761:1782" ph="{...}" />
+            <marker date="1565712657795" expanded="true" signature="6:169" ph="..." />
+            <marker date="1565712657795" expanded="true" signature="229:1753" ph="{...}" />
+            <marker date="1565712657795" expanded="true" signature="407:1512" ph="{...}" />
+            <marker date="1565712657795" expanded="true" signature="529:1500" ph="/* Iron Python ... */" />
+            <marker date="1565712657795" expanded="true" signature="1542:1639" ph="{...}" />
+            <marker date="1565712657795" expanded="true" signature="1670:1751" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Expressionist/PythonTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+          <folding>
+            <marker date="1565883017087" expanded="false" signature="6:150" ph="..." />
+            <marker date="1565883017087" expanded="true" signature="191:2707" ph="{...}" />
+            <marker date="1565883017087" expanded="true" signature="263:2542" ph="{...}" />
+            <marker date="1565883017087" expanded="true" signature="312:2527" ph="{...}" />
+            <marker date="1565883017087" expanded="true" signature="1223:1710" ph="/* StreamReader reader = new StreamReader(Application.dataPath + @&quot;\Scripts\Expressionist\productionist.py&quot;); ... */" />
+            <marker date="1565883017087" expanded="true" signature="2581:2626" ph="{...}" />
+            <marker date="1565883017087" expanded="true" signature="2684:2705" ph="{...}" />
           </folding>
         </state>
       </provider>

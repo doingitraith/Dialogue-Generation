@@ -24,8 +24,9 @@ public class PythonTest : MonoBehaviour
             PythonEngine.PythonHome = envPythonHome;
             PythonEngine.PythonPath = Environment.GetEnvironmentVariable("PYTHONPATH");
             
-            Debug.Log("PYTHONHOME: "+PythonEngine.PythonHome+" | PYTHONPATH: "+PythonEngine.PythonPath);
+            //Debug.Log("PYTHONHOME: "+PythonEngine.PythonHome+" | PYTHONPATH: "+PythonEngine.PythonPath);
             
+            /*
             StreamReader reader = new StreamReader(Application.dataPath + @"\Scripts\Expressionist\productionist.py");
             string productionistCode = reader.ReadToEnd();
 
@@ -36,8 +37,38 @@ public class PythonTest : MonoBehaviour
 
             scope.Execute(productionistScript);
             Debug.Log("Python executed");
+            */
+
+            //PythonEngine.ImportModule("productionist");
+
+            PyDict locals = new PyDict();
+            
+            PythonEngine.Exec(@"
+from productionist import Productionist, ContentRequest
+
+must_have_tags = {}
+must_not_have_tags= {}
+scoring_metric=[]
+
+request = ContentRequest(must_have=must_have_tags, must_not_have=must_not_have_tags, scoring_metric=scoring_metric)
+content_bundle = ""introduction""
+dir = ""_ExpressionistExports""
+prod = Productionist(content_bundle_name=content_bundle, content_bundle_directory=dir, probabilistic_mode=False, repetition_penalty_mode=True, terse_mode=False, verbosity=1, seed=None)
+
+result = prod.fulfill_content_request(request)
+", null, locals.Handle);
+
+            PyObject result = locals.GetItem("result");
+            Debug.Log(result.ToString());
+
         }
         
+    }
+
+
+    private void OnApplicationQuit()
+    {
+        PythonEngine.Shutdown();
     }
 
     // Update is called once per frame

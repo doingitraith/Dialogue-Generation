@@ -5,22 +5,541 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DialogueGeneration/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DialogueGeneration/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DialogueGeneration/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DialogueGeneration/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DialogueGeneration/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DialogueGeneration/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/README.md.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/introduction.grammar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/introduction.grammar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/introduction.marisa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/introduction.marisa.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/introduction.meanings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/introduction.meanings.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/introduction.stats" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/exports/introduction.stats.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/productionist.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Expressionist/productionist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PythonTest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PythonTest.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/marisa_trie.pyd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/marisa_trie.pyd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Pythonnet/marisa_trie.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Pythonnet/marisa_trie.pyd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/PythonTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Expressionist/PythonTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/content_request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/content_request.py.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/productionist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/productionist.py.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expressionist/test.py.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tracery/Demo/Scenes/DemoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tracery/Demo/Scenes/DemoScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/BaseHTTPServer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/Bastion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/CGIHTTPServer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ConfigParser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/Cookie.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/DocXMLRPCServer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/HTMLParser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/MimeWriter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/Queue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/SimpleHTTPServer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/SimpleXMLRPCServer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/SocketServer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/StringIO.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/UserDict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/UserList.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/UserString.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/_LWPCookieJar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/_MozillaCookieJar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/__future__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/__phello__.foo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/_abcoll.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/_osx_support.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/_pyio.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/_strptime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/_threading_local.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/_weakrefset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/abc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/aifc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/antigravity.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/anydbm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/argparse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ast.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/asynchat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/asyncore.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/atexit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/audiodev.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/base64.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/bdb.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/binhex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/bisect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/calendar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/cgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/cgitb.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/chunk.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/clrtype.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/cmd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/code.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/codecs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/codeop.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/collections.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/colorsys.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/commands.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/compileall.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/contextlib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/cookielib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/copy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/csv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ctypes/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ctypes/_endian.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ctypes/macholib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ctypes/macholib/dyld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ctypes/macholib/dylib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ctypes/macholib/framework.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ctypes/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ctypes/wintypes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/decimal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/difflib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/dircache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/dis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/archive_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/bcppcompiler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/ccompiler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/cmd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/bdist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/bdist_dumb.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/bdist_rpm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/bdist_wininst.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/build_clib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/build_ext.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/build_py.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/build_scripts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/check.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/clean.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/install.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/install_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/install_egg_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/install_headers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/install_lib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/install_scripts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/register.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/sdist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/command/upload.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/cygwinccompiler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/debug.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/dep_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/dir_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/dist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/emxccompiler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/errors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/extension.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/fancy_getopt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/file_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/filelist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/log.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/msvccompiler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/spawn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/sysconfig.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/text_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/unixccompiler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/distutils/versionpredicate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/doctest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/dumbdbm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/dummy_thread.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/dummy_threading.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/_parseaddr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/base64mime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/charset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/encoders.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/errors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/feedparser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/generator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/header.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/iterators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/message.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/mime/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/mime/application.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/mime/audio.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/mime/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/mime/image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/mime/message.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/mime/multipart.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/mime/nonmultipart.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/mime/text.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/quoprimime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/email/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/aliases.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/ascii.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/base64_codec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/bz2_codec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/charmap.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp037.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp1006.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp1026.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp1140.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp1250.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp1251.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp1252.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp1253.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp1254.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp1255.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp1256.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp1257.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp1258.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp424.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp437.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp500.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp720.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp737.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp775.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp850.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp852.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp855.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp856.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp857.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp858.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp860.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp861.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp862.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp863.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp864.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp865.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp866.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp869.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp874.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/cp875.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/hex_codec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/hp_roman8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/idna.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/iso8859_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/iso8859_10.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/iso8859_11.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/iso8859_13.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/iso8859_14.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/iso8859_15.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/iso8859_16.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/iso8859_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/iso8859_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/iso8859_4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/iso8859_5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/iso8859_6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/iso8859_7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/iso8859_8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/iso8859_9.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/koi8_r.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/koi8_u.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/latin_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/mac_arabic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/mac_centeuro.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/mac_croatian.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/mac_cyrillic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/mac_farsi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/mac_greek.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/mac_iceland.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/mac_latin2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/mac_roman.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/mac_romanian.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/mac_turkish.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/mbcs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/palmos.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/ptcp154.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/punycode.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/quopri_codec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/raw_unicode_escape.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/rot_13.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/string_escape.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/tis_620.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/undefined.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/unicode_escape.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/unicode_internal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/utf_16.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/utf_16_be.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/utf_16_le.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/utf_32.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/utf_32_be.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/utf_32_le.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/utf_7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/utf_8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/utf_8_sig.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/uu_codec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/encodings/zlib_codec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ensurepip/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ensurepip/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ensurepip/_bundled/pip-8.1.1-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ensurepip/_bundled/setuptools-20.10.1-py2.py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ensurepip/_uninstall.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/filecmp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/fileinput.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/fnmatch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/formatter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/fpformat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/fractions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ftplib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/functools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/genericpath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/getopt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/getpass.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/gettext.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/glob.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/gzip.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/hashlib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/heapq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/hmac.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/htmlentitydefs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/htmllib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/httplib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ihooks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/imaplib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/imghdr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/importlib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/imputil.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/inspect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/io.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/json/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/json/decoder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/json/encoder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/json/scanner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/json/tool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/keyword.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/btm_matcher.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/btm_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixer_base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixer_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_apply.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_asserts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_basestring.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_buffer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_dict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_except.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_exec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_execfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_exitfunc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_filter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_funcattrs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_future.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_getcwdu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_has_key.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_idioms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_import.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_imports.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_imports2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_intern.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_isinstance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_itertools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_itertools_imports.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_long.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_map.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_metaclass.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_methodattrs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_ne.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_next.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_nonzero.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_numliterals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_operator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_paren.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_print.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_raise.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_raw_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_reduce.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_renames.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_repr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_set_literal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_standarderror.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_sys_exc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_throw.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_tuple_params.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_types.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_unicode.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_urllib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_ws_comma.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_xrange.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_xreadlines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/fixes/fix_zip.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/patcomp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/pgen2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/pgen2/conv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/pgen2/driver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/pgen2/grammar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/pgen2/literals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/pgen2/parse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/pgen2/pgen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/pgen2/token.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/pgen2/tokenize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/pygram.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/pytree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/lib2to3/refactor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/linecache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/locale.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/logging/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/logging/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/logging/handlers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/macpath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/macurl2path.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/mailbox.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/mailcap.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/markupbase.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/md5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/mhlib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/mimetools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/mimetypes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/mimify.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/modulefinder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/multifile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/multiprocessing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/multiprocessing/connection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/multiprocessing/dummy/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/multiprocessing/dummy/connection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/multiprocessing/forking.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/multiprocessing/heap.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/multiprocessing/managers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/multiprocessing/pool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/multiprocessing/process.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/multiprocessing/queues.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/multiprocessing/reduction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/multiprocessing/sharedctypes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/multiprocessing/synchronize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/multiprocessing/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/mutex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/netrc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/new.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/nntplib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ntpath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/nturl2path.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/numbers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/opcode.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/optparse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/os.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/os2emxpath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/pdb.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/pickle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/pickletools.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/pipes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/pkgutil.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/platform.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/plistlib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/popen2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/poplib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/posixfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/posixpath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/pprint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/profile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/pstats.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/py_compile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/pyclbr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/pydoc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/pydoc_data/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/pydoc_data/topics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/quopri.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/random.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/repr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/rexec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/rfc822.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/rlcompleter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/robotparser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/runpy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/sched.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/sets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/sgmllib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/sha.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/shelve.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/shlex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/shutil.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site-packages/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/site.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/smtpd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/smtplib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/sndhdr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/socket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/sqlite3/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/sqlite3/dbapi2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/sqlite3/dump.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/sre_constants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/sre_parse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/ssl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/stat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/statvfs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/string.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/stringold.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/stringprep.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/struct.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/subprocess.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/sunau.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/sunaudio.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/symbol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/sysconfig.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/tabnanny.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/tarfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/telnetlib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/tempfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/textwrap.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/this.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/threading.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/timeit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/toaiff.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/token.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/tokenize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/trace.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/traceback.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/types.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/unittest/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/unittest/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/unittest/case.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/unittest/loader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/unittest/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/unittest/result.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/unittest/runner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/unittest/signals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/unittest/suite.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/unittest/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/urllib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/urllib2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/urlparse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/uu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/uuid.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/warnings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/wave.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/weakref.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/webbrowser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/whichdb.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/wpf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/wsgiref/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/wsgiref/handlers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/wsgiref/headers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/wsgiref/simple_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/wsgiref/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/wsgiref/validate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xdrlib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/dom/NodeFilter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/dom/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/dom/domreg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/dom/expatbuilder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/dom/minicompat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/dom/minidom.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/dom/pulldom.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/dom/xmlbuilder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/etree/ElementInclude.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/etree/ElementPath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/etree/ElementTree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/etree/SimpleXMLTreeBuilder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/etree/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/parsers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/parsers/expat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/sax/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/sax/_exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/sax/expatreader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/sax/handler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/sax/saxutils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xml/sax/xmlreader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xmllib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/xmlrpclib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/zipfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python/Python36/Lib/productionist.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/Python36/Lib/productionist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python/Python36/include/object.h" beforeDir="false" afterPath="$PROJECT_DIR$/Python/Python36/include/object.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python/Python36/include/pylifecycle.h" beforeDir="false" afterPath="$PROJECT_DIR$/Python/Python36/include/pylifecycle.h" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,15 +552,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
+            <state relative-caret-position="870">
+              <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
               <folding>
-                <marker date="1565712657795" expanded="true" signature="6:169" ph="..." />
-                <marker date="1565712657795" expanded="true" signature="229:1753" ph="{...}" />
-                <marker date="1565712657795" expanded="true" signature="407:1512" ph="{...}" />
-                <marker date="1565712657795" expanded="true" signature="529:1500" ph="/* Iron Python ... */" />
-                <marker date="1565712657795" expanded="true" signature="1542:1639" ph="{...}" />
-                <marker date="1565712657795" expanded="true" signature="1670:1751" ph="{...}" />
+                <element signature="e#0#185#0" expanded="true" />
+                <marker date="1565898392875" expanded="true" signature="245:2125" ph="{...}" />
+                <marker date="1565898392875" expanded="true" signature="457:1562" ph="{...}" />
+                <marker date="1565898392875" expanded="true" signature="579:1550" ph="/* Iron Python ... */" />
+                <marker date="1565898392875" expanded="true" signature="1592:1689" ph="{...}" />
+                <marker date="1565898392875" expanded="true" signature="1720:2123" ph="{...}" />
+                <marker date="1565898392875" expanded="true" signature="1865:2083" ph="/* , ... */" />
               </folding>
             </state>
           </provider>
@@ -50,35 +570,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Expressionist/PythonTest.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+            <state relative-caret-position="121">
+              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
               <folding>
-                <marker date="1565883017087" expanded="false" signature="6:150" ph="..." />
-                <marker date="1565883017087" expanded="true" signature="191:2707" ph="{...}" />
-                <marker date="1565883017087" expanded="true" signature="263:2542" ph="{...}" />
-                <marker date="1565883017087" expanded="true" signature="312:2527" ph="{...}" />
-                <marker date="1565883017087" expanded="true" signature="1223:1710" ph="/* StreamReader reader = new StreamReader(Application.dataPath + @&quot;\Scripts\Expressionist\productionist.py&quot;); ... */" />
-                <marker date="1565883017087" expanded="true" signature="2581:2626" ph="{...}" />
-                <marker date="1565883017087" expanded="true" signature="2684:2705" ph="{...}" />
+                <marker date="1565898220633" expanded="false" signature="6:150" ph="..." />
+                <marker date="1565898220633" expanded="true" signature="191:3964" ph="{...}" />
+                <marker date="1565898220633" expanded="true" signature="825:1703" ph="{...}" />
+                <marker date="1565898220633" expanded="true" signature="865:1697" ph="{...}" />
+                <marker date="1565898220633" expanded="true" signature="1881:2307" ph="{...}" />
+                <marker date="1565898220633" expanded="true" signature="1957:2271" ph="{...}" />
+                <marker date="1565898220633" expanded="true" signature="2500:3799" ph="{...}" />
+                <marker date="1565898220633" expanded="true" signature="2571:2820" ph="{...}" />
+                <marker date="1565898220633" expanded="true" signature="2638:2810" ph="{...}" />
+                <marker date="1565898220633" expanded="true" signature="2925:3189" ph="{...}" />
+                <marker date="1565898220633" expanded="true" signature="2995:3179" ph="{...}" />
+                <marker date="1565898220633" expanded="true" signature="3287:3644" ph="{...}" />
+                <marker date="1565898220633" expanded="true" signature="3355:3634" ph="{...}" />
+                <marker date="1565898220633" expanded="true" signature="3838:3883" ph="{...}" />
+                <marker date="1565898220633" expanded="true" signature="3941:3962" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5749F69-DE19-46FF-97B4-7B2C57B7EEC8/a2/36ea1a51/Py.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="49" column="6" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5749F69-DE19-46FF-97B4-7B2C57B7EEC8/cd/87425864/ImportHook.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2370">
-              <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -89,62 +599,62 @@
             <state relative-caret-position="-15">
               <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
               <folding>
-                <marker date="1564407340237" expanded="false" signature="6:104" ph="..." />
-                <marker date="1564407340237" expanded="true" signature="128:8474" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="133:228" ph="/// A Grammar object as described in @GalaxyKate's tracery.io. ... " />
-                <marker date="1564407340237" expanded="true" signature="258:8472" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="267:393" ph="/// Finds escape characters that are not preceeded by an odd number of escape characters. ... " />
-                <marker date="1564407340237" expanded="true" signature="537:606" ph="/// The raw json grammar string. ... " />
-                <marker date="1564407340237" expanded="true" signature="642:717" ph="/// Key/value store for grammar rules. ... " />
-                <marker date="1564407340237" expanded="true" signature="754:828" ph="/// Key/value store for savable data. ... " />
-                <marker date="1564407340237" expanded="true" signature="866:931" ph="/// Modifier function table. ... " />
-                <marker date="1564407340237" expanded="true" signature="1042:1719" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="1115:1189" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="1299:1676" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="1758:1810" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="1816:2087" ph="/// Resolves the default starting symbol &quot;##origin##&quot;. ... " />
-                <marker date="1564407340237" expanded="true" signature="2139:2217" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="2281:2770" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="2314:2382" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="2817:4943" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="2858:2889" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="3019:4915" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="3069:3182" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="3207:3319" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="3341:4787" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="3489:3532" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="3886:4025" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="4249:4365" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="4460:4554" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="4836:4907" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="4949:5200" ph="/// Add a modifier to the modifier lookup. ... " />
-                <marker date="1564407340237" expanded="true" signature="5269:5311" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="5415:5551" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="5442:5489" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="5557:5855" ph="/// Applies found modifier functions to a symbol. ... " />
-                <marker date="1564407340237" expanded="true" signature="5928:6102" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="6109:6467" ph="/// Resolve the ##symbol## from save data first, then a grammar rule if nothing saved, ... " />
-                <marker date="1564407340237" expanded="true" signature="6517:7277" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="6559:6587" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="6616:6663" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="6704:6732" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="6777:6843" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="6884:6912" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="6941:7024" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="7060:7250" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="7099:7157" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="7193:7242" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="7283:7536" ph="/// Resolves and saves the content inside [action] brackets. ... " />
-                <marker date="1564407340237" expanded="true" signature="7603:7838" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="7685:7722" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="7750:7799" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="7844:7992" ph="/// Pops the most recent entry for the save data key. ... " />
-                <marker date="1564407340237" expanded="true" signature="8033:8277" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="8058:8083" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="8110:8135" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="8227:8271" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="8313:8468" ph="{...}" />
-                <marker date="1564407340237" expanded="true" signature="8388:8443" ph="{...}" />
+                <marker date="1564484203799" expanded="false" signature="6:104" ph="..." />
+                <marker date="1564484203799" expanded="true" signature="128:8474" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="133:228" ph="/// A Grammar object as described in @GalaxyKate's tracery.io. ... " />
+                <marker date="1564484203799" expanded="true" signature="258:8472" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="267:393" ph="/// Finds escape characters that are not preceeded by an odd number of escape characters. ... " />
+                <marker date="1564484203799" expanded="true" signature="537:606" ph="/// The raw json grammar string. ... " />
+                <marker date="1564484203799" expanded="true" signature="642:717" ph="/// Key/value store for grammar rules. ... " />
+                <marker date="1564484203799" expanded="true" signature="754:828" ph="/// Key/value store for savable data. ... " />
+                <marker date="1564484203799" expanded="true" signature="866:931" ph="/// Modifier function table. ... " />
+                <marker date="1564484203799" expanded="true" signature="1042:1719" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="1115:1189" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="1299:1676" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="1758:1810" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="1816:2087" ph="/// Resolves the default starting symbol &quot;##origin##&quot;. ... " />
+                <marker date="1564484203799" expanded="true" signature="2139:2217" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="2281:2770" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="2314:2382" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="2817:4943" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="2858:2889" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="3019:4915" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="3069:3182" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="3207:3319" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="3341:4787" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="3489:3532" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="3886:4025" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="4249:4365" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="4460:4554" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="4836:4907" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="4949:5200" ph="/// Add a modifier to the modifier lookup. ... " />
+                <marker date="1564484203799" expanded="true" signature="5269:5311" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="5415:5551" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="5442:5489" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="5557:5855" ph="/// Applies found modifier functions to a symbol. ... " />
+                <marker date="1564484203799" expanded="true" signature="5928:6102" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="6109:6467" ph="/// Resolve the ##symbol## from save data first, then a grammar rule if nothing saved, ... " />
+                <marker date="1564484203799" expanded="true" signature="6517:7277" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="6559:6587" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="6616:6663" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="6704:6732" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="6777:6843" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="6884:6912" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="6941:7024" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="7060:7250" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="7099:7157" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="7193:7242" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="7283:7536" ph="/// Resolves and saves the content inside [action] brackets. ... " />
+                <marker date="1564484203799" expanded="true" signature="7603:7838" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="7685:7722" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="7750:7799" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="7844:7992" ph="/// Pops the most recent entry for the save data key. ... " />
+                <marker date="1564484203799" expanded="true" signature="8033:8277" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="8058:8083" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="8110:8135" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="8227:8271" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="8313:8468" ph="{...}" />
+                <marker date="1564484203799" expanded="true" signature="8388:8443" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -156,17 +666,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2B5BA87A-4AB5-419B-AE81-CFDBB4C4B7F7/7d/a4aaaa74/CSharpArgumentInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Expressionist/PythonTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tracery/Scripts/TraceryGrammar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tracery/JSON/VectorTemplates.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A746901E-010D-43B2-8D1F-ABC944D48B5F/9c/abecb0f8/Runtime.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CB335C44-B64B-4942-8A21-06D2DCA6B553/ae/ff82a3a1/PythonEngine.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A746901E-010D-43B2-8D1F-ABC944D48B5F/47/73062176/PythonEngine.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5749F69-DE19-46FF-97B4-7B2C57B7EEC8/a2/36ea1a51/Py.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Readme.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Expressionist/PythonTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5749F69-DE19-46FF-97B4-7B2C57B7EEC8/cd/87425864/ImportHook.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -174,9 +678,9 @@
         <option value="$PROJECT_DIR$/Assets/Tracery/Scripts/TraceryGrammar.cs" />
         <option value="$PROJECT_DIR$/Assets/Tracery/Demo/Grammars/hero-grammar.json" />
         <option value="$PROJECT_DIR$/Assets/Grammars/introduction_grammar.json" />
-        <option value="$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PythonTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Expressionist/PythonTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs" />
       </list>
     </option>
   </component>
@@ -189,10 +693,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="374" />
-    <option name="y" value="240" />
-    <option name="width" value="2252" />
-    <option name="height" value="1440" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -200,10 +703,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="UnityExplorer">
-        <option name="show-hidden-items" value="false" />
-        <option name="show-project-names" value="true" />
-      </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -245,8 +746,10 @@
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -278,10 +781,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="23400">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="15828">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="23400" />
+      <option name="pid" value="15828" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -309,11 +812,13 @@
       <workItem from="1565740864540" duration="590000" />
       <workItem from="1565780731391" duration="7595000" />
       <workItem from="1565867972595" duration="7911000" />
+      <workItem from="1565895234420" duration="3309000" />
+      <workItem from="1565898701364" duration="414000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42601000" />
+    <option name="totallyTimeSpent" value="46324000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -325,15 +830,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29464287" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.089504525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49793956" weight="0.39928058" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49760255" weight="0.39824945" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49862638" weight="0.3297362" />
@@ -345,7 +850,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Unit Tests" order="13" />
       <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49862638" weight="0.3297362" />
-      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.5020604" side_tool="true" visible="true" weight="0.39928058" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="15" sideWeight="0.5023974" side_tool="true" visible="true" weight="0.39824945" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -379,12 +884,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Tracery/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="-90" />
       </provider>
@@ -438,113 +937,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2B5BA87A-4AB5-419B-AE81-CFDBB4C4B7F7/7d/a4aaaa74/CSharpArgumentInfo.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A746901E-010D-43B2-8D1F-ABC944D48B5F/9c/abecb0f8/Runtime.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="964" column="34" selection-start-line="964" selection-start-column="34" selection-end-line="964" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A746901E-010D-43B2-8D1F-ABC944D48B5F/47/73062176/PythonEngine.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="251" column="58" selection-start-line="251" selection-start-column="58" selection-end-line="251" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CB335C44-B64B-4942-8A21-06D2DCA6B553/ae/ff82a3a1/PythonEngine.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="306" column="27" selection-start-line="306" selection-start-column="27" selection-end-line="306" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5749F69-DE19-46FF-97B4-7B2C57B7EEC8/a2/36ea1a51/Py.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="49" column="6" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5749F69-DE19-46FF-97B4-7B2C57B7EEC8/cd/87425864/ImportHook.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2370">
-          <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Tracery/Scripts/TraceryGrammar.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding>
-            <marker date="1564407340237" expanded="false" signature="6:104" ph="..." />
-            <marker date="1564407340237" expanded="true" signature="128:8474" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="133:228" ph="/// A Grammar object as described in @GalaxyKate's tracery.io. ... " />
-            <marker date="1564407340237" expanded="true" signature="258:8472" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="267:393" ph="/// Finds escape characters that are not preceeded by an odd number of escape characters. ... " />
-            <marker date="1564407340237" expanded="true" signature="537:606" ph="/// The raw json grammar string. ... " />
-            <marker date="1564407340237" expanded="true" signature="642:717" ph="/// Key/value store for grammar rules. ... " />
-            <marker date="1564407340237" expanded="true" signature="754:828" ph="/// Key/value store for savable data. ... " />
-            <marker date="1564407340237" expanded="true" signature="866:931" ph="/// Modifier function table. ... " />
-            <marker date="1564407340237" expanded="true" signature="1042:1719" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="1115:1189" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="1299:1676" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="1758:1810" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="1816:2087" ph="/// Resolves the default starting symbol &quot;##origin##&quot;. ... " />
-            <marker date="1564407340237" expanded="true" signature="2139:2217" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="2281:2770" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="2314:2382" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="2817:4943" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="2858:2889" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="3019:4915" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="3069:3182" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="3207:3319" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="3341:4787" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="3489:3532" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="3886:4025" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="4249:4365" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="4460:4554" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="4836:4907" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="4949:5200" ph="/// Add a modifier to the modifier lookup. ... " />
-            <marker date="1564407340237" expanded="true" signature="5269:5311" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="5415:5551" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="5442:5489" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="5557:5855" ph="/// Applies found modifier functions to a symbol. ... " />
-            <marker date="1564407340237" expanded="true" signature="5928:6102" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="6109:6467" ph="/// Resolve the ##symbol## from save data first, then a grammar rule if nothing saved, ... " />
-            <marker date="1564407340237" expanded="true" signature="6517:7277" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="6559:6587" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="6616:6663" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="6704:6732" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="6777:6843" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="6884:6912" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="6941:7024" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="7060:7250" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="7099:7157" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="7193:7242" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="7283:7536" ph="/// Resolves and saves the content inside [action] brackets. ... " />
-            <marker date="1564407340237" expanded="true" signature="7603:7838" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="7685:7722" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="7750:7799" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="7844:7992" ph="/// Pops the most recent entry for the save data key. ... " />
-            <marker date="1564407340237" expanded="true" signature="8033:8277" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="8058:8083" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="8110:8135" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="8227:8271" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="8313:8468" ph="{...}" />
-            <marker date="1564407340237" expanded="true" signature="8388:8443" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2B5BA87A-4AB5-419B-AE81-CFDBB4C4B7F7/7d/a4aaaa74/CSharpArgumentInfo.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A746901E-010D-43B2-8D1F-ABC944D48B5F/9c/abecb0f8/Runtime.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A746901E-010D-43B2-8D1F-ABC944D48B5F/47/73062176/PythonEngine.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CB335C44-B64B-4942-8A21-06D2DCA6B553/ae/ff82a3a1/PythonEngine.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5749F69-DE19-46FF-97B4-7B2C57B7EEC8/a2/36ea1a51/Py.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5749F69-DE19-46FF-97B4-7B2C57B7EEC8/cd/87425864/ImportHook.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Tracery/JSON/readme.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -562,40 +960,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PythonTest.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PythonTest.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="28" column="98" selection-start-line="28" selection-start-column="98" selection-end-line="28" selection-end-column="98" />
+        <state relative-caret-position="870">
+          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#185#0" expanded="true" />
+            <marker date="1565898392875" expanded="true" signature="245:2125" ph="{...}" />
+            <marker date="1565898392875" expanded="true" signature="457:1562" ph="{...}" />
+            <marker date="1565898392875" expanded="true" signature="579:1550" ph="/* Iron Python ... */" />
+            <marker date="1565898392875" expanded="true" signature="1592:1689" ph="{...}" />
+            <marker date="1565898392875" expanded="true" signature="1720:2123" ph="{...}" />
+            <marker date="1565898392875" expanded="true" signature="1865:2083" ph="/* , ... */" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Tracery/Demo/Scripts/DemoPanel.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Tracery/Scripts/TraceryGrammar.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
+        <state relative-caret-position="-15">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
           <folding>
-            <marker date="1565712657795" expanded="true" signature="6:169" ph="..." />
-            <marker date="1565712657795" expanded="true" signature="229:1753" ph="{...}" />
-            <marker date="1565712657795" expanded="true" signature="407:1512" ph="{...}" />
-            <marker date="1565712657795" expanded="true" signature="529:1500" ph="/* Iron Python ... */" />
-            <marker date="1565712657795" expanded="true" signature="1542:1639" ph="{...}" />
-            <marker date="1565712657795" expanded="true" signature="1670:1751" ph="{...}" />
+            <marker date="1564484203799" expanded="false" signature="6:104" ph="..." />
+            <marker date="1564484203799" expanded="true" signature="128:8474" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="133:228" ph="/// A Grammar object as described in @GalaxyKate's tracery.io. ... " />
+            <marker date="1564484203799" expanded="true" signature="258:8472" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="267:393" ph="/// Finds escape characters that are not preceeded by an odd number of escape characters. ... " />
+            <marker date="1564484203799" expanded="true" signature="537:606" ph="/// The raw json grammar string. ... " />
+            <marker date="1564484203799" expanded="true" signature="642:717" ph="/// Key/value store for grammar rules. ... " />
+            <marker date="1564484203799" expanded="true" signature="754:828" ph="/// Key/value store for savable data. ... " />
+            <marker date="1564484203799" expanded="true" signature="866:931" ph="/// Modifier function table. ... " />
+            <marker date="1564484203799" expanded="true" signature="1042:1719" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="1115:1189" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="1299:1676" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="1758:1810" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="1816:2087" ph="/// Resolves the default starting symbol &quot;##origin##&quot;. ... " />
+            <marker date="1564484203799" expanded="true" signature="2139:2217" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="2281:2770" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="2314:2382" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="2817:4943" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="2858:2889" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="3019:4915" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="3069:3182" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="3207:3319" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="3341:4787" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="3489:3532" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="3886:4025" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="4249:4365" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="4460:4554" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="4836:4907" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="4949:5200" ph="/// Add a modifier to the modifier lookup. ... " />
+            <marker date="1564484203799" expanded="true" signature="5269:5311" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="5415:5551" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="5442:5489" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="5557:5855" ph="/// Applies found modifier functions to a symbol. ... " />
+            <marker date="1564484203799" expanded="true" signature="5928:6102" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="6109:6467" ph="/// Resolve the ##symbol## from save data first, then a grammar rule if nothing saved, ... " />
+            <marker date="1564484203799" expanded="true" signature="6517:7277" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="6559:6587" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="6616:6663" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="6704:6732" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="6777:6843" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="6884:6912" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="6941:7024" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="7060:7250" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="7099:7157" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="7193:7242" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="7283:7536" ph="/// Resolves and saves the content inside [action] brackets. ... " />
+            <marker date="1564484203799" expanded="true" signature="7603:7838" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="7685:7722" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="7750:7799" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="7844:7992" ph="/// Pops the most recent entry for the save data key. ... " />
+            <marker date="1564484203799" expanded="true" signature="8033:8277" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="8058:8083" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="8110:8135" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="8227:8271" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="8313:8468" ph="{...}" />
+            <marker date="1564484203799" expanded="true" signature="8388:8443" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Expressionist/PythonTest.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+        <state relative-caret-position="121">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
           <folding>
-            <marker date="1565883017087" expanded="false" signature="6:150" ph="..." />
-            <marker date="1565883017087" expanded="true" signature="191:2707" ph="{...}" />
-            <marker date="1565883017087" expanded="true" signature="263:2542" ph="{...}" />
-            <marker date="1565883017087" expanded="true" signature="312:2527" ph="{...}" />
-            <marker date="1565883017087" expanded="true" signature="1223:1710" ph="/* StreamReader reader = new StreamReader(Application.dataPath + @&quot;\Scripts\Expressionist\productionist.py&quot;); ... */" />
-            <marker date="1565883017087" expanded="true" signature="2581:2626" ph="{...}" />
-            <marker date="1565883017087" expanded="true" signature="2684:2705" ph="{...}" />
+            <marker date="1565898220633" expanded="false" signature="6:150" ph="..." />
+            <marker date="1565898220633" expanded="true" signature="191:3964" ph="{...}" />
+            <marker date="1565898220633" expanded="true" signature="825:1703" ph="{...}" />
+            <marker date="1565898220633" expanded="true" signature="865:1697" ph="{...}" />
+            <marker date="1565898220633" expanded="true" signature="1881:2307" ph="{...}" />
+            <marker date="1565898220633" expanded="true" signature="1957:2271" ph="{...}" />
+            <marker date="1565898220633" expanded="true" signature="2500:3799" ph="{...}" />
+            <marker date="1565898220633" expanded="true" signature="2571:2820" ph="{...}" />
+            <marker date="1565898220633" expanded="true" signature="2638:2810" ph="{...}" />
+            <marker date="1565898220633" expanded="true" signature="2925:3189" ph="{...}" />
+            <marker date="1565898220633" expanded="true" signature="2995:3179" ph="{...}" />
+            <marker date="1565898220633" expanded="true" signature="3287:3644" ph="{...}" />
+            <marker date="1565898220633" expanded="true" signature="3355:3634" ph="{...}" />
+            <marker date="1565898220633" expanded="true" signature="3838:3883" ph="{...}" />
+            <marker date="1565898220633" expanded="true" signature="3941:3962" ph="{...}" />
           </folding>
         </state>
       </provider>

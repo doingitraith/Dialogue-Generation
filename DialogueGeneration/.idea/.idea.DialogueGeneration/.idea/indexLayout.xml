@@ -16,7 +16,6 @@
     </explicitIncludes>
     <explicitExcludes>
       <Path>.idea</Path>
-      <Path>Lib</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
       <Path>Python</Path>

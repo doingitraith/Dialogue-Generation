@@ -106,6 +106,7 @@ PyAPI_FUNC(void) PyFloat_Fini(void);
 PyAPI_FUNC(void) PyOS_FiniInterrupts(void);
 PyAPI_FUNC(void) _PyGC_DumpShutdownStats(void);
 PyAPI_FUNC(void) _PyGC_Fini(void);
+//PyAPI_FUNC(void) _PyGC_Clear(void);
 PyAPI_FUNC(void) PySlice_Fini(void);
 PyAPI_FUNC(void) _PyType_Fini(void);
 PyAPI_FUNC(void) _PyRandom_Fini(void);

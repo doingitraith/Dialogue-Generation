@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Boo.Lang;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityTracery;
@@ -13,6 +14,7 @@ public class DemoPanel : MonoBehaviour
 	public InputField GrammarInput;
 	public InputField TokenInput;
 	public Text TextOutput;
+	public PythonTest Expressionist;
 
 	public TraceryGrammar Grammar;
 
@@ -59,5 +61,10 @@ public class DemoPanel : MonoBehaviour
 	{
 		var output = Grammar.Parse(TokenInput.text);
 		TextOutput.text = output;
+		string generatedText = Expressionist.GenerateText("introduction"/*, 
+			new System.Collections.Generic.List<string>(){"male"},
+			new System.Collections.Generic.List<string>(){"female"},
+			new System.Collections.Generic.List<Tuple<string,int>>(){new Tuple<string, int>("male",1)}*/);
+		TextOutput.text = generatedText;
 	}
 }

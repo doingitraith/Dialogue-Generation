@@ -6,8 +6,8 @@ import pickle  # Used to serialize the repetition-penalties dictionary, for pers
 import argparse  # Used to handle command-line arguments for this program
 import marisa_trie  # Used to load a trie data structure efficiently storing all the paths through the grammar
 
-REPETITION_PENALTY_MULTIPLIER = 2
-REPETITION_PENALTY_RECOVERY_RATE = 2
+REPETITION_PENALTY_MULTIPLIER = 0.033
+REPETITION_PENALTY_RECOVERY_RATE = 1.2
 
 class Productionist(object):
     """A system that generates text outputs at runtime, on the fly.

@@ -9,9 +9,22 @@ using Python.Runtime;
 public class PythonTest : MonoBehaviour
 {
     // Start is called before the first frame update
+    private string requestCode=@"
+from productionist import Productionist, ContentRequest
+
+must_have_tags={0}
+must_not_have_tags={1}
+scoring_metric={2}
+
+request = ContentRequest(must_have=must_have_tags, must_not_have=must_not_have_tags, scoring_metric=scoring_metric)
+content_bundle = ""{3}""
+dir = ""_ExpressionistExports""
+prod = Productionist(content_bundle_name=content_bundle, content_bundle_directory=dir, probabilistic_mode=False, repetition_penalty_mode=True, terse_mode=False, verbosity=1, seed=None)
+
+result = prod.fulfill_content_request(request)
+";
     void Start()
     {
-        
         using (Py.GIL())
         {
             string envPythonHome = System.IO.Directory.GetCurrentDirectory() + @"\Python\Python36";
@@ -23,46 +36,73 @@ public class PythonTest : MonoBehaviour
 
             PythonEngine.PythonHome = envPythonHome;
             PythonEngine.PythonPath = Environment.GetEnvironmentVariable("PYTHONPATH");
-            
-            //Debug.Log("PYTHONHOME: "+PythonEngine.PythonHome+" | PYTHONPATH: "+PythonEngine.PythonPath);
-            
-            /*
-            StreamReader reader = new StreamReader(Application.dataPath + @"\Scripts\Expressionist\productionist.py");
-            string productionistCode = reader.ReadToEnd();
 
-            PyObject productionistScript = PythonEngine.Compile(productionistCode);
-            Debug.Log("Python compiled");
-            
-            PyScope scope = Py.CreateScope("expressionist");
+            PythonEngine.ImportModule("productionist");
+        }
+    }
 
-            scope.Execute(productionistScript);
-            Debug.Log("Python executed");
-            */
+    public string GenerateText(string grammarName, List<string> mustHaveTags = null, List<string> mustNotHaveTags = null,
+        List<Tuple<string, int>> scoringMetric = null)
+    {
+        string generatedText = "";
 
-            //PythonEngine.ImportModule("productionist");
-
+        using (Py.GIL())
+        {
             PyDict locals = new PyDict();
             
-            PythonEngine.Exec(@"
-from productionist import Productionist, ContentRequest
-
-must_have_tags = {}
-must_not_have_tags= {}
-scoring_metric=[]
-
-request = ContentRequest(must_have=must_have_tags, must_not_have=must_not_have_tags, scoring_metric=scoring_metric)
-content_bundle = ""introduction""
-dir = ""_ExpressionistExports""
-prod = Productionist(content_bundle_name=content_bundle, content_bundle_directory=dir, probabilistic_mode=False, repetition_penalty_mode=True, terse_mode=False, verbosity=1, seed=None)
-
-result = prod.fulfill_content_request(request)
-", null, locals.Handle);
+            PythonEngine.Exec(PrepareRequestCode(grammarName,mustHaveTags,mustNotHaveTags,scoringMetric),
+                null, locals.Handle);
 
             PyObject result = locals.GetItem("result");
-            Debug.Log(result.ToString());
-
+            generatedText = result.ToString();
         }
+        return generatedText;
+    }
+
+    private string PrepareRequestCode(string grammarName, List<string> mustHaveTags = null,
+        List<string> mustNotHaveTags = null,
+        List<Tuple<string, int>> scoringMetric = null)
+    {
+        string mustTags = "{";
+        if (mustHaveTags != null)
+        {
+            for (int i = 0; i < mustHaveTags.Count; i++)
+            {
+                mustTags += "\"" + mustHaveTags[i] + "\"";
+                if (i < mustHaveTags.Count - 1)
+                    mustTags += ",";
+            }
+        }
+        mustTags += "}";
         
+        string mustNotTags = "{";
+        if (mustNotHaveTags != null)
+        {
+            for (int i = 0; i < mustNotHaveTags.Count; i++)
+            {
+                mustNotTags += "\"" + mustNotHaveTags[i] + "\"";
+                if (i < mustNotHaveTags.Count - 1)
+                    mustNotTags += ",";
+            }
+        }
+        mustNotTags += "}";
+
+        string scoreMetric = "[";
+        if (scoringMetric != null)
+        {
+            for (int i = 0; i < scoringMetric.Count; i++)
+            {
+                Tuple<string, int> t = scoringMetric[i];
+                scoreMetric += "(\"" + t.Item1 + "\"," + t.Item2 + ")";                
+                
+                if (i < scoringMetric.Count - 1)
+                    scoreMetric += ",";
+            }
+        }
+        scoreMetric += "]";
+
+        string code = string.Format(requestCode, mustTags, mustNotTags, scoreMetric, grammarName);
+        return code;
     }
 
 

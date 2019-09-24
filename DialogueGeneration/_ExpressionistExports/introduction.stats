@@ -1,68 +1,76 @@
-Total outputs	840
+Total outputs	192
 Total expressible meanings	2
 Total terminal expansions of nonterminal symbols
-	themFem	None
-	maleAddress	3
-	theirMale	None
-	theirFem	None
-	themMale	None
-	their	None
-	theirsFem	None
-	theirs	None
 	femaleAddress	3
-	greeting	42
-	start	840
+	timeComment	4
+	themFem	None
+	theirMale	None
+	themMale	None
+	theirsFem	None
+	their	None
+	timeOfDay	1
 	theirsMale	None
-	theyFem	None
+	repeatComment	None
+	startIntroduction	192
+	welcome	24
+	replyIntroduction	None
+	them	None
 	they	None
 	address	6
-	them	None
+	maleAddress	3
+	theirFem	None
+	theirs	None
+	greeting	12
+	theyFem	None
+	replyComment	None
 	theyMale	None
-	offerHelp	20
-	timeOfDay	4
-	timeComment	4
-	START	840
+	offerHelp	8
+	START	192
 Total terminal results of production rules
-	[[themFem]] --> her	None
-	[[maleAddress]] --> Sir	1
-	[[maleAddress]] --> pal	1
-	[[maleAddress]] --> friend	1
-	[[theirMale]] --> his	None
-	[[theirFem]] --> her	None
-	[[themMale]] --> him	None
-	[[their]] --> [[theirMale]]	None
-	[[their]] --> [[theirFem]]	None
-	[[theirsFem]] --> hers	None
-	[[theirs]] --> [[theirsMale]]	None
-	[[theirs]] --> [[theirsFem]]	None
 	[[femaleAddress]] --> Mam	1
 	[[femaleAddress]] --> Madam	1
 	[[femaleAddress]] --> Mademoiselle	1
-	[[greeting]] --> Good [[timeOfDay]], [[address]].	24
-	[[greeting]] --> Welcome, [[address]].	6
-	[[greeting]] --> Good to see you, [[address]].	6
-	[[greeting]] --> Please, [[address]] come in.	6
-	[[start]] --> [[greeting]] [[offerHelp]]	840
-	[[theirsMale]] --> his	None
-	[[theyFem]] --> she	None
-	[[they]] --> [[theyMale]]	None
-	[[they]] --> [[theyFem]]	None
-	[[address]] --> [[maleAddress]]	3
-	[[address]] --> [[femaleAddress]]	3
-	[[them]] --> [[themMale]]	None
-	[[them]] --> [[themFem]]	None
-	[[theyMale]] --> he	None
-	[[offerHelp]] --> How may I help you today?	1
-	[[offerHelp]] --> How can I help you on this [[timeComment]] [[timeOfDay]]?	16
-	[[offerHelp]] --> What can I do for you?	1
-	[[offerHelp]] --> What do you want?	1
-	[[offerHelp]] --> Is there anything I can do for you?	1
-	[[timeOfDay]] --> afternoon	1
-	[[timeOfDay]] --> evening	1
-	[[timeOfDay]] --> morning	1
-	[[timeOfDay]] --> day	1
 	[[timeComment]] --> wonderful	1
 	[[timeComment]] --> radiant	1
 	[[timeComment]] --> great	1
 	[[timeComment]] --> beautiful	1
-	[[START]] --> [[start]]	840
+	[[themFem]] --> her	None
+	[[theirMale]] --> his	None
+	[[themMale]] --> him	None
+	[[theirsFem]] --> hers	None
+	[[their]] --> [[theirMale]]	None
+	[[their]] --> [[theirFem]]	None
+	[[timeOfDay]] --> {dayTime}	1
+	[[theirsMale]] --> his	None
+	[[repeatComment]] --> too	None
+	[[repeatComment]] --> as well	None
+	[[startIntroduction]] --> [[welcome]] [[offerHelp]]	192
+	[[welcome]] --> [[greeting]]	12
+	[[welcome]] --> Welcome, [[address]]. 	6
+	[[welcome]] --> Please, [[address]] come in. 	6
+	[[replyIntroduction]] --> [[greeting]] [[replyComment]]	None
+	[[replyIntroduction]] --> [[replyComment]] [[greeting]]	None
+	[[them]] --> [[themMale]]	None
+	[[them]] --> [[themFem]]	None
+	[[they]] --> [[theyMale]]	None
+	[[they]] --> [[theyFem]]	None
+	[[address]] --> [[maleAddress]]	3
+	[[address]] --> [[femaleAddress]]	3
+	[[maleAddress]] --> Sir	1
+	[[maleAddress]] --> pal	1
+	[[maleAddress]] --> friend	1
+	[[theirFem]] --> her	None
+	[[theirs]] --> [[theirsMale]]	None
+	[[theirs]] --> [[theirsFem]]	None
+	[[greeting]] --> Good [[timeOfDay]], [[address]].	6
+	[[greeting]] --> Good to see you, [[address]].	6
+	[[theyFem]] --> she	None
+	[[replyComment]] --> A [[timeComment]] [[timeOfDay]] to you [[repeatComment]].	None
+	[[replyComment]] --> Nice to meet you [[repeatComment]].	None
+	[[theyMale]] --> he	None
+	[[offerHelp]] --> How may I help you today?	1
+	[[offerHelp]] --> How can I help you on this [[timeComment]] {[[timeOfDay]] as dayTime}?	4
+	[[offerHelp]] --> What can I do for you?	1
+	[[offerHelp]] --> What do you want?	1
+	[[offerHelp]] --> Is there anything I can do for you?	1
+	[[START]] --> [[startIntroduction]]	192

@@ -16,9 +16,11 @@
     </explicitIncludes>
     <explicitExcludes>
       <Path>.idea</Path>
+      <Path>Builds</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
       <Path>Python</Path>
+      <Path>Temp</Path>
       <Path>_ExpressionistExports</Path>
       <Path>obj</Path>
     </explicitExcludes>

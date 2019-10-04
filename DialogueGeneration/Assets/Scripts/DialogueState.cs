@@ -5,15 +5,15 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum IntentID
+public enum IntentId
 {
-    GREETING,
-    REPLY_GREETING
+    Greeting,
+    ReplyGreeting
 }
 
 public struct Intent
 {
-    public IntentID Id;
+    public IntentId Id;
     public float SentimentModifier;
     public string Label;
     public string GrammarName;
@@ -23,7 +23,7 @@ public struct Intent
         return this.Id.Equals(other.Id);
     }
 
-    public string ToString()
+    public override string ToString()
     {
         return GrammarName;
     }
@@ -31,21 +31,31 @@ public struct Intent
 
 public struct ExpressionistRequest
 {
-    public List<string> mustHaveTags;
-    public List<string> mustNotHaveTags;
-    public List<Tuple<string, int>> scoringMetric;
-    public List<Tuple<string, string>> state;
+    public readonly List<string> mustHaveTags;
+    public readonly List<string> mustNotHaveTags;
+    public readonly List<Tuple<string, int>> scoringMetric;
+    public readonly List<Tuple<string, string>> state;
+
+    public ExpressionistRequest(List<string> mustHaveTags, List<string> mustNotHaveTags, 
+        List<Tuple<string, int>> scoringMetric, List<Tuple<string, string>> state)
+    {
+        this.mustHaveTags = mustHaveTags;
+        this.mustNotHaveTags = mustNotHaveTags;
+        this.scoringMetric = scoringMetric;
+        this.state = state;
+    }
 }
 
 public class DialogueState : MonoBehaviour
 {
     public PythonEndpoint pythonEndpoint;
     public bool isPlayerTurn;
-    public Dictionary<IntentID, List<IntentID>> reactions;
+    public Dictionary<IntentId, List<IntentId>> reactions;
     public List<Intent> allIntents;
     public string currentText;
     public DialogueParticipant player;
     public DialogueParticipant npc;
+    public UserInterface userInterface;
 
     private string _generatedText;
     private List<Sentiment> _sentiments;
@@ -67,7 +77,8 @@ public class DialogueState : MonoBehaviour
         _selectedGrammar = "introduction";
         _isUpdated = false;
         _isTextGenerated = false;
-        
+
+        WriteDialogue();
     }
 
     void Update()
@@ -75,29 +86,33 @@ public class DialogueState : MonoBehaviour
         if (_isUpdated)
         {
             currentText = _generatedText;
+            userInterface.PresentText(isPlayerTurn, currentText);
             _isUpdated = false;
         }
     }
-
-    public void AddReactionIntents(IntentID reactTo)
+    
+    private void WriteDialogue()
     {
-        List<IntentID> replies = reactions[reactTo];
-        if (reactions != null)
-        {
-            if(isPlayerTurn)
-                replies.ForEach(i => player.CurrentIntentBacklog.Push(i));
-            else
-                replies.ForEach(i => npc.CurrentIntentBacklog.Push(i));
-        }
+        Intent intent = GetNextIntent();
+        ExpressionistRequest request = new ExpressionistRequest(null, null, null, null);
+        GetTextForIntent(intent, request);
+        AddReactionIntents(intent.Id);
     }
 
-    public Intent getNextIntent()
+    public void AddReactionIntents(IntentId reactTo)
     {
-        IntentID id = isPlayerTurn ? player.CurrentIntentBacklog.Pop() : npc.CurrentIntentBacklog.Pop();
+        List<IntentId> replies = reactions[reactTo];
+        if (reactions != null && isPlayerTurn)
+            replies.ForEach(i => npc.currentIntentBacklog.Push(i));
+    }
+
+    public Intent GetNextIntent()
+    {
+        IntentId id = isPlayerTurn ? player.currentIntentBacklog.Pop() : npc.currentIntentBacklog.Pop();
         return allIntents.Find(i => i.Id.Equals(id));
     }
 
-    public void getTextForIntent(Intent intent, ExpressionistRequest request)
+    public void GetTextForIntent(Intent intent, ExpressionistRequest request)
     {
         pythonEndpoint.ExpressionistRequestCode(intent.ToString(), request.mustHaveTags,request.mustNotHaveTags, request.scoringMetric, request.state);
         
@@ -124,18 +139,23 @@ public class DialogueState : MonoBehaviour
     
     private void InitializeIntents()
     {
-        allIntents = new List<Intent>();
-        // TODO: Add all Intents
-        allIntents.Add(new Intent()
+        allIntents = new List<Intent>
         {
-            Id = IntentID.GREETING,
-            GrammarName = "greeting",
-            SentimentModifier = .01f,
-            Label = "Greet"
-        });
-        
-        reactions = new Dictionary<IntentID, List<IntentID>>();
+            new Intent()
+            {
+                Id = IntentId.Greeting, GrammarName = "introduction", SentimentModifier = .01f, Label = "Greet"
+            },
+            new Intent()
+            {
+                Id = IntentId.ReplyGreeting, GrammarName = "replyIntroduction", SentimentModifier = .01f, Label = "Greet back"
+            }
+        };
+        // TODO: Add all Intents
+
+        reactions = new Dictionary<IntentId, List<IntentId>>
+        {
+            {IntentId.Greeting, new List<IntentId>() {IntentId.ReplyGreeting}}
+        };
         // TODO: Add all reactions
-        reactions.Add(IntentID.GREETING, new List<IntentID>(){IntentID.REPLY_GREETING});
     }
 }

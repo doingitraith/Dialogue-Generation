@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class CameraContoller : MonoBehaviour
 {
-    public Camera camera;
     public Transform npcPosition;
     public Transform playerPosition;
 
-    private bool isPlayer = true;
+    private bool isPlayer = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +22,7 @@ public class CameraContoller : MonoBehaviour
 
     public void SwitchPosition()
     {
-        Transform t = camera.transform;
+        Transform t = gameObject.transform;
         
         if (isPlayer)
             StartCoroutine(MoveCamera(t.position, npcPosition.position,
@@ -41,10 +40,10 @@ public class CameraContoller : MonoBehaviour
     {
         for (float t = .0f; t < duration; t += Time.deltaTime)
         {
-            camera.transform.position = Vector3.Lerp(startPos, targetPos, t / duration);
-            camera.transform.rotation = Quaternion.Lerp(startRotation, targetRotation, t / duration);
+            gameObject.transform.position = Vector3.Lerp(startPos, targetPos, t / duration);
+            gameObject.transform.rotation = Quaternion.Lerp(startRotation, targetRotation, t / duration);
             yield return null;
         }
-        camera.transform.position = targetPos;
+        gameObject.transform.position = targetPos;
     }
 }

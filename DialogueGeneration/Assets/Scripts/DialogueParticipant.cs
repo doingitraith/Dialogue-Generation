@@ -8,6 +8,7 @@ public class DialogueParticipant : MonoBehaviour
     public List<IntentId> dialogueGoals;
     public List<IntentId> initDialogueBacklog;
     public Stack<IntentId> currentIntentBacklog;
+    public List<Intent> replyOptions;
     public float sentimentValue;
     public Intent currentIntent;
 
@@ -22,5 +23,39 @@ public class DialogueParticipant : MonoBehaviour
     void Start()
     {
         sentimentValue = 0.0f;
+        replyOptions = new List<Intent>();
+    }
+
+    public void UpdateMood(Intent? intent)
+    {
+        if (intent == null)
+            return;
+        
+        sentimentValue = Mathf.Clamp(sentimentValue+intent.Value.SentimentModifier, -1.0f, 1.0f);
+        if (sentimentValue <= -1.0f)
+            AbortDialogue();
+    }
+
+    public void CheckGoals(Intent intent)
+    {
+        if (dialogueGoals.Contains(intent.Id))
+        {
+            dialogueGoals.Remove(intent.Id);
+            if (dialogueGoals.Count == 0)
+                FinishDialogue();
+        }
+
+    }
+
+    private void FinishDialogue()
+    {
+        // TODO: Positive End
+        throw new NotImplementedException();
+    }
+    
+    private void AbortDialogue()
+    {
+        // TODO: Negative End
+        throw new NotImplementedException();
     }
 }

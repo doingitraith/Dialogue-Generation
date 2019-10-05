@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using Expressionist;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -56,6 +57,8 @@ public class DialogueState : MonoBehaviour
     public DialogueParticipant player;
     public DialogueParticipant npc;
     public UserInterface userInterface;
+    public List<Tuple<string, string>> dialogueState;
+    public CameraContoller cameraContoller;
 
     private string _generatedText;
     private List<Sentiment> _sentiments;
@@ -68,19 +71,21 @@ public class DialogueState : MonoBehaviour
     {
         pythonEndpoint.OnTextGenerated += UpdateGeneratedText;
         pythonEndpoint.OnSentimentProcessed += UpdateSentiments;
-        isPlayerTurn = false;
+        isPlayerTurn = true;
         currentText = "";
         InitializeIntents();
-        
+
+        dialogueState = new List<Tuple<string, string>>() {new Tuple<string, string>("dayTime", "day")};
         _generatedText = "";
         _sentiments = new List<Sentiment>();
         _selectedGrammar = "introduction";
         _isUpdated = false;
         _isTextGenerated = false;
-
-        WriteDialogue();
+        userInterface.OnChangeSpeaker += ChangeSpeaker;
+        userInterface.OnGenerateDialogue += GenerateDialogue;
+        ChangeSpeaker();
     }
-
+    
     void Update()
     {
         if (_isUpdated)
@@ -90,31 +95,59 @@ public class DialogueState : MonoBehaviour
             _isUpdated = false;
         }
     }
-    
-    private void WriteDialogue()
+
+    private void ChangeSpeaker()
     {
-        Intent intent = GetNextIntent();
-        ExpressionistRequest request = new ExpressionistRequest(null, null, null, null);
+        isPlayerTurn = !isPlayerTurn;
+        DialogueParticipant speaker = isPlayerTurn ? player : npc;
+        cameraContoller.SwitchPosition(isPlayerTurn);
+        userInterface.PrepareInterface(isPlayerTurn, speaker);
+        
+        if(!isPlayerTurn)
+            GenerateDialogue();
+    }
+
+    private void GenerateDialogue()
+    {
+        DialogueParticipant speaker = isPlayerTurn ? player : npc;
+        Intent? intent = GetNextIntent(speaker);
+        if (intent == null)
+            return;
+        
+        ExpressionistRequest request = new ExpressionistRequest(null, null,
+            null, dialogueState);
         GetTextForIntent(intent, request);
-        AddReactionIntents(intent.Id);
+        speaker.UpdateMood(intent);
+        AddReactionIntents(intent.Value.Id);
     }
 
-    public void AddReactionIntents(IntentId reactTo)
+    private void AddReactionIntents(IntentId reactTo)
     {
+        if (!reactions.ContainsKey(reactTo))
+            return;
+        
         List<IntentId> replies = reactions[reactTo];
-        if (reactions != null && isPlayerTurn)
-            replies.ForEach(i => npc.currentIntentBacklog.Push(i));
+        if (replies != null)
+        {
+            if (isPlayerTurn)
+                replies.ForEach(i => npc.currentIntentBacklog.Push(i));
+            else
+                replies.ForEach(i => player.replyOptions.Add(allIntents.Find(j => j.Id.Equals(i))));    
+        }
     }
 
-    public Intent GetNextIntent()
+    private Intent? GetNextIntent(DialogueParticipant speaker)
     {
-        IntentId id = isPlayerTurn ? player.currentIntentBacklog.Pop() : npc.currentIntentBacklog.Pop();
+        if (speaker.currentIntentBacklog.Count == 0)
+            return null;
+        
+        IntentId id = speaker.currentIntentBacklog.Pop();
         return allIntents.Find(i => i.Id.Equals(id));
     }
 
-    public void GetTextForIntent(Intent intent, ExpressionistRequest request)
+    private void GetTextForIntent(Intent? intent, ExpressionistRequest request)
     {
-        pythonEndpoint.ExpressionistRequestCode(intent.ToString(), request.mustHaveTags,request.mustNotHaveTags, request.scoringMetric, request.state);
+        pythonEndpoint.ExpressionistRequestCode(intent?.ToString(), request.mustHaveTags,request.mustNotHaveTags, request.scoringMetric, request.state);
         
         while (!_isTextGenerated)
             _generatedText = pythonEndpoint.currentGeneratedString;

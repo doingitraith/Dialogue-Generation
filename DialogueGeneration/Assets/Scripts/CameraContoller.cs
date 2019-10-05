@@ -6,8 +6,7 @@ public class CameraContoller : MonoBehaviour
 {
     public Transform npcPosition;
     public Transform playerPosition;
-
-    private bool isPlayer = false;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,19 +19,16 @@ public class CameraContoller : MonoBehaviour
         
     }
 
-    public void SwitchPosition()
+    public void SwitchPosition(bool isPlayerTurn)
     {
         Transform t = gameObject.transform;
         
-        if (isPlayer)
-            StartCoroutine(MoveCamera(t.position, npcPosition.position,
-                t.rotation, npcPosition.rotation, 1.0f));
-        else
+        if (isPlayerTurn)
             StartCoroutine(MoveCamera(t.position, playerPosition.position,
                 t.rotation, playerPosition.rotation, 1.0f));
-        
-
-        isPlayer = !isPlayer;
+        else
+        StartCoroutine(MoveCamera(t.position, npcPosition.position,
+            t.rotation, npcPosition.rotation, 1.0f));
     }
 
     public IEnumerator MoveCamera(Vector3 startPos, Vector3 targetPos,

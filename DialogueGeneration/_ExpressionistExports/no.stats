@@ -1,0 +1,16 @@
+Total outputs	9
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	noComment	3
+	noRemark	3
+	start	9
+	START	9
+Total terminal results of production rules
+	[[noComment]] --> I am very sorry.	1
+	[[noComment]] --> Sorry for the inconvenience.	1
+	[[noComment]] --> 	1
+	[[noRemark]] --> No.	1
+	[[noRemark]] --> I am afraid I have to say no.	1
+	[[noRemark]] --> Unfortunately not.	1
+	[[start]] --> [[noRemark]] [[noComment]]	9
+	[[START]] --> [[start]]	9

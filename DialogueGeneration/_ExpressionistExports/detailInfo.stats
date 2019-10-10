@@ -1,0 +1,18 @@
+Total outputs	16
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	start	16
+	detailComment	4
+	detailQuestion	4
+	START	16
+Total terminal results of production rules
+	[[start]] --> [[detailQuestion]] [[detailComment]]?	16
+	[[detailComment]] --> have	1
+	[[detailComment]] --> contain	1
+	[[detailComment]] --> entail	1
+	[[detailComment]] --> support	1
+	[[detailQuestion]] --> How many {details1} does the {product1}	1
+	[[detailQuestion]] --> What is the amount of {details1}, this {product1} can	1
+	[[detailQuestion]] --> Can you tell me the number of {details1} it will	1
+	[[detailQuestion]] --> Which {details1} does the {product1}	1
+	[[START]] --> [[start]]	16

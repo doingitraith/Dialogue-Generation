@@ -1,0 +1,17 @@
+Total outputs	12
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	yesRemark	3
+	start	12
+	yesComment	4
+	START	12
+Total terminal results of production rules
+	[[yesRemark]] --> Yes.	1
+	[[yesRemark]] --> Sure.	1
+	[[yesRemark]] --> Absolutely.	1
+	[[start]] --> [[yesRemark]] [[yesComment]]	12
+	[[yesComment]] --> 	1
+	[[yesComment]] --> I can do that.	1
+	[[yesComment]] --> We can do that.	1
+	[[yesComment]] --> No problem.	1
+	[[START]] --> [[start]]	12

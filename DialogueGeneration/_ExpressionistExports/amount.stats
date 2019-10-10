@@ -1,0 +1,32 @@
+Total outputs	49
+Total expressible meanings	3
+Total terminal expansions of nonterminal symbols
+	littleIntro	4
+	muchIntro	3
+	muchTime	3
+	littleTime	2
+	start	49
+	amountTime	5
+	amountInfo	7
+	START	49
+Total terminal results of production rules
+	[[littleIntro]] --> I am happy to tell you	1
+	[[littleIntro]] --> I can tell you	1
+	[[littleIntro]] --> You'll be happy to hear	1
+	[[littleIntro]] --> I can say	1
+	[[muchIntro]] --> I'm afraid I have to tell you,	1
+	[[muchIntro]] --> I'll tell you right away	1
+	[[muchIntro]] --> I believe	1
+	[[muchTime]] --> longer	1
+	[[muchTime]] --> a bit longer	1
+	[[muchTime]] --> more {duration}	1
+	[[littleTime]] --> a lot less longer	1
+	[[littleTime]] --> not so long	1
+	[[start]] --> [[muchIntro]] [[amountInfo]]	21
+	[[start]] --> [[littleIntro]] [[amountInfo]]	28
+	[[amountTime]] --> [[muchTime]]	3
+	[[amountTime]] --> [[littleTime]]	2
+	[[amountInfo]] --> that you will have to wait [[amountTime]] than expected.	5
+	[[amountInfo]] --> that the delivery time is {amount} {duration}.	1
+	[[amountInfo]] --> we will only have the {product1} in {amount} {duration}.	1
+	[[START]] --> [[start]]	49

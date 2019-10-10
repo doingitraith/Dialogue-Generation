@@ -6,6 +6,7 @@ public class CameraContoller : MonoBehaviour
 {
     public Transform npcPosition;
     public Transform playerPosition;
+    public Transform officePosition;
     
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,13 @@ public class CameraContoller : MonoBehaviour
         else
         StartCoroutine(MoveCamera(t.position, npcPosition.position,
             t.rotation, npcPosition.rotation, 1.0f));
+    }
+
+    public void MoveOut()
+    {
+        Transform t = gameObject.transform;
+        StartCoroutine(MoveCamera(t.position, officePosition.position,
+            t.rotation, officePosition.rotation, 1.5f));
     }
 
     public IEnumerator MoveCamera(Vector3 startPos, Vector3 targetPos,

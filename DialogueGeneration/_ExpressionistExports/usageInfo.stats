@@ -1,0 +1,35 @@
+Total outputs	864
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	usageObject	3
+	usageScenario	6
+	usageVerb	3
+	start	864
+	usagePerson	8
+	usageIntro	2
+	START	864
+Total terminal results of production rules
+	[[usageObject]] --> it	1
+	[[usageObject]] --> the {product1}	1
+	[[usageObject]] --> one of the {products1}	1
+	[[usageScenario]] --> outside	1
+	[[usageScenario]] --> together	1
+	[[usageScenario]] --> with others	1
+	[[usageScenario]] --> at night	1
+	[[usageScenario]] --> at work	1
+	[[usageScenario]] --> on the road	1
+	[[usageVerb]] --> use	1
+	[[usageVerb]] --> utilize	1
+	[[usageVerb]] --> make use of	1
+	[[start]] --> [[usageIntro]] [[usagePerson]] [[usageVerb]] [[usageObject]] [[usageScenario]]?	864
+	[[usagePerson]] --> I	1
+	[[usagePerson]] --> we	1
+	[[usagePerson]] --> my kids	1
+	[[usagePerson]] --> my children	1
+	[[usagePerson]] --> my husband	1
+	[[usagePerson]] --> my partner	1
+	[[usagePerson]] --> one	1
+	[[usagePerson]] --> my parents	1
+	[[usageIntro]] --> Can	1
+	[[usageIntro]] --> How can	1
+	[[START]] --> [[start]]	864

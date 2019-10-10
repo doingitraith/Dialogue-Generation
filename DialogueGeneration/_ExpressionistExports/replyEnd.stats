@@ -1,0 +1,16 @@
+Total outputs	9
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	endComment	3
+	start	9
+	endIntro	3
+	START	9
+Total terminal results of production rules
+	[[endComment]] --> to you too.	1
+	[[endComment]] --> to you as well.	1
+	[[endComment]] --> and thanks.	1
+	[[start]] --> [[endIntro]] [[endComment]]	9
+	[[endIntro]] --> Goodbye	1
+	[[endIntro]] --> Bye	1
+	[[endIntro]] --> Good {time}	1
+	[[START]] --> [[start]]	9

@@ -1,0 +1,15 @@
+Total outputs	6
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	start	6
+	durationQuestion	5
+	START	6
+Total terminal results of production rules
+	[[start]] --> How long is the delivery time?	1
+	[[start]] --> How many {duration} [[durationQuestion]]?	5
+	[[durationQuestion]] --> will it take	1
+	[[durationQuestion]] --> is the delivery time	1
+	[[durationQuestion]] --> will the delivery take	1
+	[[durationQuestion]] --> until I can pick it up	1
+	[[durationQuestion]] --> until it is ready	1
+	[[START]] --> [[start]]	6

@@ -35,19 +35,29 @@ namespace Expressionist
     {
         private Process _pythonProcess;
         private readonly StringBuilder _inputDataString = new StringBuilder();
+        private static bool _isCreated;
 
         public event DialogueAction OnTextGenerated;
         public event DialogueAction OnSentimentProcessed;
     
         public string currentGeneratedString = "";
-        public List<Sentiment> currentSentiments;
+        public Sentiment currentSentiment;
 
         // Start is called before the first frame update
-        void Start()
+        void Awake()
         {
-            currentSentiments = new List<Sentiment>();
-            StartPythonProcess();
-            PythonSetupCommands();
+            if (!_isCreated)
+            {
+                _isCreated = true;
+                DontDestroyOnLoad(this.gameObject);
+                
+                StartPythonProcess();
+                PythonSetupCommands();
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
 
         private void StartPythonProcess()
@@ -216,7 +226,7 @@ namespace Expressionist
             s = "content_bundle = \"{0}\"";
             _inputDataString.AppendLine(string.Format(s,grammarName));
             _inputDataString.AppendLine("dir = \"_ExpressionistExports\"");
-            _inputDataString.AppendLine("prod = Productionist(content_bundle_name=content_bundle, content_bundle_directory=dir, probabilistic_mode=True, repetition_penalty_mode=True, shuffle_candidate_sets=True, terse_mode=False, verbosity=1, seed=None)");
+            _inputDataString.AppendLine("prod = Productionist(content_bundle_name=content_bundle, content_bundle_directory=dir, probabilistic_mode=True, repetition_penalty_mode=False, shuffle_candidate_sets=True, terse_mode=False, verbosity=1, seed=None)");
             _inputDataString.AppendLine("result = prod.fulfill_content_request(request)");
             _inputDataString.AppendLine("print(\"RESULT: \"+str(result))");
         
@@ -238,9 +248,7 @@ namespace Expressionist
                     neu = float.Parse(parts[3]),
                     pos = float.Parse(parts[4])
                 };
-
-                if(!currentSentiments.Contains(sentiment))
-                    currentSentiments.Add(sentiment);
+                currentSentiment = sentiment;
             }
         }
 

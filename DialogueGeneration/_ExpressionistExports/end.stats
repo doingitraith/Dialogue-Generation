@@ -1,0 +1,22 @@
+Total outputs	21
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	adjective	3
+	start	21
+	bye	3
+	byeComment	7
+	START	21
+Total terminal results of production rules
+	[[adjective]] --> wonderful	1
+	[[adjective]] --> great	1
+	[[adjective]] --> pleasant	1
+	[[start]] --> [[bye]] [[byeComment]]	21
+	[[bye]] --> Thank you so much	1
+	[[bye]] --> Thank you very much	1
+	[[bye]] --> I am glad I could help you	1
+	[[byeComment]] --> and have a [[adjective]] {time}.	3
+	[[byeComment]] --> I hope you are happy with your new {product1}.	1
+	[[byeComment]] --> I hope you are satisfied with your service.	1
+	[[byeComment]] --> and come again.	1
+	[[byeComment]] --> and goodbye.	1
+	[[START]] --> [[start]]	21

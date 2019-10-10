@@ -1,0 +1,64 @@
+Total outputs	20
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	theirMale	None
+	maleAddress	None
+	introQuestion	3
+	theirFem	None
+	themFem	None
+	their	None
+	requestInfo	4
+	theirs	None
+	address	None
+	they	None
+	femaleAddress	None
+	them	None
+	start	20
+	theirsMale	None
+	theyFem	None
+	requestStatement	8
+	introStatement	2
+	theyMale	None
+	theirsFem	None
+	requestQuestion	12
+	themMale	None
+	START	20
+Total terminal results of production rules
+	[[theirMale]] --> his	None
+	[[maleAddress]] --> Sir	None
+	[[maleAddress]] --> pal	None
+	[[maleAddress]] --> friend	None
+	[[introQuestion]] --> Can you tell me about	1
+	[[introQuestion]] --> How about	1
+	[[introQuestion]] --> What can you tell me about	1
+	[[theirFem]] --> her	None
+	[[themFem]] --> her	None
+	[[their]] --> [[theirMale]]	None
+	[[their]] --> [[theirFem]]	None
+	[[requestInfo]] --> the {feature}	1
+	[[requestInfo]] --> the {features}	1
+	[[requestInfo]] --> how many {features} there are	1
+	[[requestInfo]] --> the fact, that there is a {feature}	1
+	[[theirs]] --> [[theirsMale]]	None
+	[[theirs]] --> [[theirsFem]]	None
+	[[address]] --> [[maleAddress]]	None
+	[[address]] --> [[femaleAddress]]	None
+	[[they]] --> [[theyMale]]	None
+	[[they]] --> [[theyFem]]	None
+	[[femaleAddress]] --> Mam	None
+	[[femaleAddress]] --> Madam	None
+	[[femaleAddress]] --> Mademoiselle	None
+	[[them]] --> [[themMale]]	None
+	[[them]] --> [[themFem]]	None
+	[[start]] --> [[requestQuestion]]	12
+	[[start]] --> [[requestStatement]]	8
+	[[theirsMale]] --> his	None
+	[[theyFem]] --> she	None
+	[[requestStatement]] --> [[introStatement]] [[requestInfo]].	8
+	[[introStatement]] --> I want to know more about	1
+	[[introStatement]] --> Tell me about	1
+	[[theyMale]] --> he	None
+	[[theirsFem]] --> hers	None
+	[[requestQuestion]] --> [[introQuestion]] [[requestInfo]]?	12
+	[[themMale]] --> him	None
+	[[START]] --> [[start]]	20

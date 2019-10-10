@@ -1,0 +1,35 @@
+Total outputs	444
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	compareAgainst	3
+	comparison	37
+	adjective	5
+	start	444
+	compareIntro	4
+	usage	5
+	START	444
+Total terminal results of production rules
+	[[compareAgainst]] --> any other {product1}	1
+	[[compareAgainst]] --> the other {product1}	1
+	[[compareAgainst]] --> your competitor's {products1}	1
+	[[comparison]] --> better than	1
+	[[comparison]] --> more [[adjective]] than	5
+	[[comparison]] --> more [[adjective]] for [[usage]] than	25
+	[[comparison]] --> easier to use than	1
+	[[comparison]] --> as [[adjective]] as	5
+	[[adjective]] --> interesting	1
+	[[adjective]] --> useful	1
+	[[adjective]] --> good	1
+	[[adjective]] --> helpful	1
+	[[adjective]] --> comfortable	1
+	[[start]] --> [[compareIntro]] [[comparison]] [[compareAgainst]]?	444
+	[[compareIntro]] --> Is your {product1}	1
+	[[compareIntro]] --> Is it	1
+	[[compareIntro]] --> Will the {product1} be	1
+	[[compareIntro]] --> Will it be	1
+	[[usage]] --> taking photos	1
+	[[usage]] --> listening to music	1
+	[[usage]] --> making calls	1
+	[[usage]] --> browsing the web	1
+	[[usage]] --> using social media	1
+	[[START]] --> [[start]]	444

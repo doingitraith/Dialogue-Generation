@@ -1,0 +1,26 @@
+Total outputs	72
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	sorryRemark	4
+	start	72
+	outOfStock	6
+	sorryComment	3
+	unavailable	5
+	START	72
+Total terminal results of production rules
+	[[sorryRemark]] --> I am so sorry.	1
+	[[sorryRemark]] --> Please accept my apologies.	1
+	[[sorryRemark]] --> Oh no.	1
+	[[sorryRemark]] --> 	1
+	[[start]] --> [[sorryRemark]] [[outOfStock]] [[sorryComment]]	72
+	[[outOfStock]] --> I am afraid the {product1} is [[unavailable]].	5
+	[[outOfStock]] --> We do not have any {products1} here right now.	1
+	[[sorryComment]] --> I will make it up to you.	1
+	[[sorryComment]] --> I cannot stress how sorry we are.	1
+	[[sorryComment]] --> Sorry again.	1
+	[[unavailable]] --> unavailable	1
+	[[unavailable]] --> currently unavailable	1
+	[[unavailable]] --> out of stock	1
+	[[unavailable]] --> currently out of stock	1
+	[[unavailable]] --> not here	1
+	[[START]] --> [[start]]	72

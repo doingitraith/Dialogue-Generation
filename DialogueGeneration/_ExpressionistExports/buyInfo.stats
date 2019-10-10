@@ -1,0 +1,40 @@
+Total outputs	540
+Total expressible meanings	2
+Total terminal expansions of nonterminal symbols
+	buyInsertion	2
+	buy	270
+	buyDecision	3
+	buyRemark	5
+	start	540
+	buyAct	9
+	buyNotRemark	5
+	buySubject	3
+	buyNot	270
+	START	540
+Total terminal results of production rules
+	[[buyInsertion]] --> I think	1
+	[[buyInsertion]] --> After some consideration	1
+	[[buy]] --> [[buyRemark]] [[buyInsertion]] [[buyDecision]] [[buyAct]].	270
+	[[buyDecision]] --> I will	1
+	[[buyDecision]] --> I have decided to	1
+	[[buyDecision]] --> I have decided that I will	1
+	[[buyRemark]] --> Ok.	1
+	[[buyRemark]] --> Well.	1
+	[[buyRemark]] --> Okay.	1
+	[[buyRemark]] --> 	1
+	[[buyRemark]] --> Alright.	1
+	[[start]] --> [[buyNot]]	270
+	[[start]] --> [[buy]]	270
+	[[buyAct]] --> take [[buySubject]]	3
+	[[buyAct]] --> buy [[buySubject]]	3
+	[[buyAct]] --> take [[buySubject]] home	3
+	[[buyNotRemark]] --> Actually.	1
+	[[buyNotRemark]] --> Well.	1
+	[[buyNotRemark]] --> Sorry but...	1
+	[[buyNotRemark]] --> 	1
+	[[buyNotRemark]] --> Listen.	1
+	[[buySubject]] --> it	1
+	[[buySubject]] --> the {product1}	1
+	[[buySubject]] --> your {product1}	1
+	[[buyNot]] --> [[buyNotRemark]] [[buyInsertion]] [[buyDecision]] not [[buyAct]].	270
+	[[START]] --> [[start]]	540

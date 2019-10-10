@@ -1,0 +1,18 @@
+Total outputs	16
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	sorryRemark	4
+	start	16
+	sorryComment	4
+	START	16
+Total terminal results of production rules
+	[[sorryRemark]] --> I am so sorry.	1
+	[[sorryRemark]] --> Please accept my apologies.	1
+	[[sorryRemark]] --> Oh no.	1
+	[[sorryRemark]] --> 	1
+	[[start]] --> [[sorryRemark]] [[sorryComment]]	16
+	[[sorryComment]] --> I will make it up to you.	1
+	[[sorryComment]] --> Please let me handle the issue personally.	1
+	[[sorryComment]] --> I cannot stress how sorry we are.	1
+	[[sorryComment]] --> Sorry again.	1
+	[[START]] --> [[start]]	16

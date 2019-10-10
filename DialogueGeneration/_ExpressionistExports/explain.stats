@@ -1,0 +1,22 @@
+Total outputs	45
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	start	45
+	explain	5
+	detail	3
+	subject	3
+	START	45
+Total terminal results of production rules
+	[[start]] --> [[subject]] [[explain]] [[detail]].	45
+	[[explain]] --> has	1
+	[[explain]] --> contains	1
+	[[explain]] --> is equipped with	1
+	[[explain]] --> comes with	1
+	[[explain]] --> features	1
+	[[detail]] --> {amount} of it	1
+	[[detail]] --> {amount} {details1}	1
+	[[detail]] --> exactly {amount}	1
+	[[subject]] --> It	1
+	[[subject]] --> The {product1}	1
+	[[subject]] --> Every single one of our {product1}	1
+	[[START]] --> [[start]]	45

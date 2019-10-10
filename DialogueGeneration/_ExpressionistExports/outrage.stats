@@ -1,0 +1,31 @@
+Total outputs	360
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	remark	4
+	adjective	4
+	start	360
+	insertion	5
+	act	3
+	outrage	90
+	subject	6
+	START	360
+Total terminal results of production rules
+	[[remark]] --> Listen!	1
+	[[remark]] --> Okay!	1
+	[[remark]] --> No!	1
+	[[remark]] --> Hey!	1
+	[[adjective]] --> okay	1
+	[[adjective]] --> acceptable	1
+	[[adjective]] --> alright	1
+	[[adjective]] --> good	1
+	[[start]] --> [[remark]] [[outrage]]	360
+	[[insertion]] --> This is not [[adjective]].	4
+	[[insertion]] --> 	1
+	[[act]] --> be offered bad service	1
+	[[act]] --> be spoken to like that	1
+	[[act]] --> have my time wasted	1
+	[[outrage]] --> [[insertion]] [[subject]] [[act]].	90
+	[[subject]] --> I did not come here to 	1
+	[[subject]] --> I do not want to	1
+	[[subject]] --> It is not [[adjective]] that I am here to	4
+	[[START]] --> [[start]]	360

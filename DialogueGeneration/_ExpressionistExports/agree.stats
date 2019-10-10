@@ -1,0 +1,10 @@
+Total outputs	3
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	start	3
+	START	3
+Total terminal results of production rules
+	[[start]] --> I couldn't agree more.	1
+	[[start]] --> Absolutely.	1
+	[[start]] --> Yes.	1
+	[[START]] --> [[start]]	3

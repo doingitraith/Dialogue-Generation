@@ -83,7 +83,7 @@ public class DemoPanel : MonoBehaviour
 	private void UpdateSentiments()
 	{
 		sentiments = "";
-		sentiments += "\n" + Expressionist.currentSentiments.Find(item => item.utterance.Equals(generatedText)).ToString();
+		sentiments += "\n" + Expressionist.currentSentiment.ToString();
 
 		isUpdated = true;
 	}

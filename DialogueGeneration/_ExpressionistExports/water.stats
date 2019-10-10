@@ -1,0 +1,20 @@
+Total outputs	25
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	waterIntro	25
+	start	25
+	drink	5
+	START	25
+Total terminal results of production rules
+	[[waterIntro]] --> Please let me offer you [[drink]].	5
+	[[waterIntro]] --> Can I bring you [[drink]]?	5
+	[[waterIntro]] --> Let me offer you [[drink]].	5
+	[[waterIntro]] --> Could I offer you [[drink]]?	5
+	[[waterIntro]] --> Would you like [[drink]]?	5
+	[[start]] --> [[waterIntro]]	25
+	[[drink]] --> some water	1
+	[[drink]] --> a glass of water	1
+	[[drink]] --> some refreshments	1
+	[[drink]] --> a drink	1
+	[[drink]] --> something cool to drink	1
+	[[START]] --> [[start]]	25

@@ -9,28 +9,48 @@ public class UserInterface : MonoBehaviour
     public float typeDelay;
     public GameObject playerDialogueArea;
     public GameObject npcDialogueArea;
+    public GameObject titleScreen;
+    public GameObject[] buttons;
+    public Slider slider;
     
     public event DialogueAction OnGenerateDialogue;
     public event DialogueAction OnChangeSpeaker;
     private Text _dialogueText;
     private Coroutine _typingCoroutine;
+    private Coroutine _slidingCoroutine;
     private string _currentText;
     private bool _isTyping;
+    private bool _isSliding;
     private bool _isPlayerTurn;
     private DialogueParticipant _speaker;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        _dialogueText = GameObject.FindWithTag("Text").GetComponent<Text>();
-        _isTyping = false;
-        _isPlayerTurn = true;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void StartDialoueUI()
+    {
+        titleScreen.SetActive(false);
+        npcDialogueArea.SetActive(true);
+        slider.gameObject.SetActive(true);
+        _dialogueText = GameObject.FindWithTag("Text").GetComponent<Text>();
+        _isTyping = false;
+        _isSliding = false;
+        _isPlayerTurn = true;   
+    }
+
+    public void EndDialogueUI()
+    {
+        npcDialogueArea.SetActive(false);
+        playerDialogueArea.SetActive(false);
     }
     
     public void PrepareInterface(bool isPlayerTurn, DialogueParticipant speaker)
@@ -43,6 +63,7 @@ public class UserInterface : MonoBehaviour
 
         if (_isPlayerTurn)
         {
+            _dialogueText.text = _currentText;
             Button skipButton = GameObject.Find("SkipButton").GetComponent<Button>();
             int numOfReplies = speaker.replyOptions.Count;
 
@@ -56,18 +77,27 @@ public class UserInterface : MonoBehaviour
 
     private void ActivateReplyButtons(int numOfReplies)
     {
-        GameObject buttonArea = GameObject.Find("Replies");
-        Button[] buttons = buttonArea.GetComponentsInChildren<Button>();
+        //GameObject buttonArea = GameObject.Find("Replies");
+        //Button[] buttons = buttonArea.GetComponentsInChildren<Button>();
         for (int i = 0; i < buttons.Length; i++)
         {
             buttons[i].gameObject.SetActive(false);
             if (i <= numOfReplies - 1)
             {
                 buttons[i].gameObject.SetActive(true);
-                buttons[i].interactable = true;
-                buttons[i].GetComponentInChildren<Text>().text = _speaker.replyOptions[i].Label;
+                buttons[i].GetComponentInChildren<Button>().interactable = true;
+                buttons[i].GetComponentInChildren<Text>().text = 
+                    DialogueState.allIntents.Find(j => j.Id.Equals(_speaker.replyOptions[i].Id)).Label;
             }
         }
+    }
+
+    public void UpdateSlider(float value)
+    {
+        if (_isSliding)
+            StopCoroutine(_slidingCoroutine);
+        else
+            _slidingCoroutine = StartCoroutine(MoveSlider(slider.value, value, .5f));
     }
 
     public void OnReplyClick(int idx)
@@ -77,7 +107,7 @@ public class UserInterface : MonoBehaviour
         foreach (Button button in buttons)
             button.interactable = false;
         
-        _speaker.currentIntentBacklog.Push(_speaker.replyOptions[idx].Id);
+        _speaker.currentIntentBacklog.Push(_speaker.replyOptions[idx]);
         OnGenerateDialogue?.Invoke();
     }
 
@@ -97,7 +127,9 @@ public class UserInterface : MonoBehaviour
             _isTyping = false;
         }
         else
+        {
             OnChangeSpeaker?.Invoke();
+        }
     }
 
     public void MakeTextBigger()
@@ -108,6 +140,11 @@ public class UserInterface : MonoBehaviour
     public void MakeTextSmaller()
     {
         _dialogueText.fontSize--;
+    }
+
+    public void OnExit()
+    {
+        Application.Quit();
     }
 
     IEnumerator TypeText(string fullText)
@@ -121,5 +158,17 @@ public class UserInterface : MonoBehaviour
         }
 
         _isTyping = false;
+    }
+    
+    public IEnumerator MoveSlider(float startValue, float targetValue, float duration)
+    {
+        _isSliding = true;
+        for (float t = .0f; t < duration; t += Time.deltaTime)
+        {
+            slider.value = Mathf.Lerp(startValue, targetValue, t / duration);
+            yield return null;
+        }
+        slider.value = targetValue;
+        _isSliding = false;
     }
 }

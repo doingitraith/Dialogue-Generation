@@ -1,0 +1,50 @@
+Total outputs	90
+Total expressible meanings	3
+Total terminal expansions of nonterminal symbols
+		None
+	mehComment	5
+	happyRemark	5
+	unhappyComment	4
+	meh	25
+	unhappy	20
+	happyAdjective	2
+	start	90
+	unhappyRemark	5
+	happyComment	9
+	happy	45
+	START	90
+Total terminal results of production rules
+	[[mehComment]] --> 	1
+	[[mehComment]] --> I guess that's okay.	1
+	[[mehComment]] --> Could be better.	1
+	[[mehComment]] --> Not perfect, but not too bad.	1
+	[[mehComment]] --> That's not too bad.	1
+	[[happyRemark]] --> Super!	1
+	[[happyRemark]] --> Great!	1
+	[[happyRemark]] --> Perfect!	1
+	[[happyRemark]] --> Good!	1
+	[[happyRemark]] --> Nice!	1
+	[[unhappyComment]] --> That is not really what I wanted to hear.	1
+	[[unhappyComment]] --> That is not so good	1
+	[[unhappyComment]] --> That's too bad.	1
+	[[unhappyComment]] --> Not what I expected.	1
+	[[meh]] --> [[unhappyRemark]] [[mehComment]]	25
+	[[unhappy]] --> [[unhappyRemark]] [[unhappyComment]]	20
+	[[happyAdjective]] --> great	1
+	[[happyAdjective]] --> good	1
+	[[start]] --> [[happy]]	45
+	[[start]] --> [[meh]]	25
+	[[start]] --> [[unhappy]]	20
+	[[unhappyRemark]] --> Ugh.	1
+	[[unhappyRemark]] --> Hmm...	1
+	[[unhappyRemark]] --> Oh.	1
+	[[unhappyRemark]] --> Well...	1
+	[[unhappyRemark]] --> So...	1
+	[[happyComment]] --> That is [[happyAdjective]].	2
+	[[happyComment]] --> That is [[happyAdjective]] to hear.	2
+	[[happyComment]] --> So [[happyAdjective]] to hear.	2
+	[[happyComment]] --> Thank you.	1
+	[[happyComment]] --> Thank you so much.	1
+	[[happyComment]] --> Thank you very much.	1
+	[[happy]] --> [[happyRemark]] [[happyComment]]	45
+	[[START]] --> [[start]]	90

@@ -1,0 +1,43 @@
+Total outputs	1404
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	qualIntro	6
+	start	1404
+	qualStatement	39
+	verbP	4
+	most	3
+	qualComment	6
+	subjects	2
+	subject	3
+	START	1404
+Total terminal results of production rules
+	[[qualIntro]] --> I can promise	1
+	[[qualIntro]] --> So	1
+	[[qualIntro]] --> If you decide to take this home,	1
+	[[qualIntro]] --> I can say this,	1
+	[[qualIntro]] --> Well,	1
+	[[qualIntro]] --> Look,	1
+	[[start]] --> [[qualIntro]] [[qualStatement]] [[qualComment]]	1404
+	[[qualStatement]] --> [[subjects]] [[verbP]] the [[most]] {details1} currently available.	24
+	[[qualStatement]] --> [[subject]] is really the [[most]] device right now.	9
+	[[qualStatement]] --> you will be very satisfied with [[subject]].	3
+	[[qualStatement]] --> you will be happy with [[subject]].	3
+	[[verbP]] --> have	1
+	[[verbP]] --> contain	1
+	[[verbP]] --> include	1
+	[[verbP]] --> feature	1
+	[[most]] --> best	1
+	[[most]] --> most promising	1
+	[[most]] --> most user friendly	1
+	[[qualComment]] --> What do you say?	1
+	[[qualComment]] --> How does that sound?	1
+	[[qualComment]] --> What do you think?	1
+	[[qualComment]] --> It's great.	1
+	[[qualComment]] --> Sounds good right?	1
+	[[qualComment]] --> I have one myself.	1
+	[[subjects]] --> the {products1}	1
+	[[subjects]] --> all our {products1}	1
+	[[subject]] --> it	1
+	[[subject]] --> our {product1}	1
+	[[subject]] --> every one of our {product1}	1
+	[[START]] --> [[start]]	1404

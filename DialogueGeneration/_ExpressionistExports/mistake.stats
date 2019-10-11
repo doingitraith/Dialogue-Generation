@@ -1,0 +1,27 @@
+Total outputs	160
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	stutter	5
+	sorryIntro	4
+	sorryStatement	4
+	sorryComment	2
+	start	160
+	START	160
+Total terminal results of production rules
+	[[stutter]] --> 	1
+	[[stutter]] --> Uhm...	1
+	[[stutter]] --> Oh...	1
+	[[stutter]] --> So...	1
+	[[stutter]] --> Well...	1
+	[[sorryIntro]] --> Let me tell you	1
+	[[sorryIntro]] --> Let me just say	1
+	[[sorryIntro]] --> I want to say	1
+	[[sorryIntro]] --> You can believe me when I tell you	1
+	[[sorryStatement]] --> this was an error on our part.	1
+	[[sorryStatement]] --> a terrible mistake has been made.	1
+	[[sorryStatement]] --> I want to apologize for the mistake.	1
+	[[sorryStatement]] --> a mistake has been made here.	1
+	[[sorryComment]] --> 	1
+	[[sorryComment]] --> Sorry again.	1
+	[[start]] --> [[stutter]] [[sorryIntro]] [[sorryStatement]] [[sorryComment]]	160
+	[[START]] --> [[start]]	160

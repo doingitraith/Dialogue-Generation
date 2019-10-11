@@ -1,5 +1,5 @@
-Total outputs	840
-Total expressible meanings	2
+Total outputs	95
+Total expressible meanings	3
 Total terminal expansions of nonterminal symbols
 	themFem	None
 	maleAddress	3
@@ -10,18 +10,18 @@ Total terminal expansions of nonterminal symbols
 	theirsFem	None
 	theirs	None
 	femaleAddress	3
-	greeting	42
-	start	840
+	greeting	19
+	start	95
 	theirsMale	None
 	theyFem	None
 	they	None
 	address	6
 	them	None
 	theyMale	None
-	offerHelp	20
-	timeOfDay	4
-	timeComment	4
-	START	840
+	offerHelp	5
+	timeOfDay	None
+	timeComment	None
+	START	95
 Total terminal results of production rules
 	[[themFem]] --> her	None
 	[[maleAddress]] --> Sir	1
@@ -38,11 +38,11 @@ Total terminal results of production rules
 	[[femaleAddress]] --> Mam	1
 	[[femaleAddress]] --> Madam	1
 	[[femaleAddress]] --> Mademoiselle	1
-	[[greeting]] --> Good [[timeOfDay]], [[address]].	24
-	[[greeting]] --> Welcome, [[address]].	6
+	[[greeting]] --> Good {dayTime}, [[address]].	6
+	[[greeting]] --> Hi.	1
 	[[greeting]] --> Good to see you, [[address]].	6
-	[[greeting]] --> Please, [[address]] come in.	6
-	[[start]] --> [[greeting]] [[offerHelp]]	840
+	[[greeting]] --> Hello [[address]].	6
+	[[start]] --> [[greeting]] [[offerHelp]]	95
 	[[theirsMale]] --> his	None
 	[[theyFem]] --> she	None
 	[[they]] --> [[theyMale]]	None
@@ -52,17 +52,17 @@ Total terminal results of production rules
 	[[them]] --> [[themMale]]	None
 	[[them]] --> [[themFem]]	None
 	[[theyMale]] --> he	None
-	[[offerHelp]] --> How may I help you today?	1
-	[[offerHelp]] --> How can I help you on this [[timeComment]] [[timeOfDay]]?	16
-	[[offerHelp]] --> What can I do for you?	1
-	[[offerHelp]] --> What do you want?	1
-	[[offerHelp]] --> Is there anything I can do for you?	1
-	[[timeOfDay]] --> afternoon	1
-	[[timeOfDay]] --> evening	1
-	[[timeOfDay]] --> morning	1
-	[[timeOfDay]] --> day	1
-	[[timeComment]] --> wonderful	1
-	[[timeComment]] --> radiant	1
-	[[timeComment]] --> great	1
-	[[timeComment]] --> beautiful	1
-	[[START]] --> [[start]]	840
+	[[offerHelp]] --> I am interested in in your {products1}.	1
+	[[offerHelp]] --> I would like to know more about your {products1}.	1
+	[[offerHelp]] --> I am thinking about buying a new {product1}.	1
+	[[offerHelp]] --> What can you tell me about your {products1}?	1
+	[[offerHelp]] --> I have some questions about your {products1}.	1
+	[[timeOfDay]] --> afternoon	None
+	[[timeOfDay]] --> evening	None
+	[[timeOfDay]] --> morning	None
+	[[timeOfDay]] --> day	None
+	[[timeComment]] --> wonderful	None
+	[[timeComment]] --> radiant	None
+	[[timeComment]] --> great	None
+	[[timeComment]] --> beautiful	None
+	[[START]] --> [[start]]	95

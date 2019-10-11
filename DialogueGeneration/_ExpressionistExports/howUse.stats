@@ -1,0 +1,35 @@
+Total outputs	630
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	verb	2
+	confirm	3
+	howStatement	42
+	start	630
+	howComment	3
+	verbPP	2
+	howIntro	5
+	subject	3
+	START	630
+Total terminal results of production rules
+	[[verb]] --> use	1
+	[[verb]] --> utilize	1
+	[[confirm]] --> yes	1
+	[[confirm]] --> absolutely	1
+	[[confirm]] --> of course	1
+	[[howStatement]] --> [[confirm]] [[subject]] can be [[verbPP]] like that.	18
+	[[howStatement]] --> [[confirm]]. You can [[verb]] the [[subject]] in this situation.	18
+	[[howStatement]] --> you are able to [[verb]] [[subject]] like that.	6
+	[[start]] --> [[howIntro]] [[howStatement]] [[howComment]]	630
+	[[howComment]] --> Does that answer your question?	1
+	[[howComment]] --> Is that alright?	1
+	[[howComment]] --> 	1
+	[[verbPP]] --> [[verb]]d	2
+	[[howIntro]] --> Well,	1
+	[[howIntro]] --> Aha,	1
+	[[howIntro]] --> So,	1
+	[[howIntro]] --> I mean,	1
+	[[howIntro]] --> In my opinion	1
+	[[subject]] --> the {product1}	1
+	[[subject]] --> this {product1}	1
+	[[subject]] --> it	1
+	[[START]] --> [[start]]	630

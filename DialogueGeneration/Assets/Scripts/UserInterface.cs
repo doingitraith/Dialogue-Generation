@@ -12,6 +12,12 @@ public class UserInterface : MonoBehaviour
     public GameObject titleScreen;
     public GameObject[] buttons;
     public Slider slider;
+    public Image playerImage;
+    public Image npcImage;
+    public Sprite playerMale;
+    public Sprite playerFemale;
+    public Sprite npcMale;
+    public Sprite npcFemale;
     
     public event DialogueAction OnGenerateDialogue;
     public event DialogueAction OnChangeSpeaker;
@@ -36,10 +42,12 @@ public class UserInterface : MonoBehaviour
         
     }
 
-    public void StartDialoueUI()
+    public void StartDialoueUI(Gender playerGender, Gender npcGender)
     {
         titleScreen.SetActive(false);
         npcDialogueArea.SetActive(true);
+        npcImage.sprite = npcGender.Equals(Gender.Male) ? npcMale : npcFemale;
+        playerImage.sprite = playerGender.Equals(Gender.Male) ? playerMale : playerFemale;
         slider.gameObject.SetActive(true);
         _dialogueText = GameObject.FindWithTag("Text").GetComponent<Text>();
         _isTyping = false;

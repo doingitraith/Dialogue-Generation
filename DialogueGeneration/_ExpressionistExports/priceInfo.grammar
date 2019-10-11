@@ -1,0 +1,127 @@
+{
+    "total_generable_outputs": 10,
+    "nonterminal_symbols": {
+        "0": {
+            "production_rules": [
+                {
+                    "body": [
+                        "How much would ",
+                        1,
+                        " cost?"
+                    ],
+                    "preconditions": "",
+                    "effects": "",
+                    "is_semantically_meaningful": false,
+                    "application_frequency": 1,
+                    "id": 0
+                },
+                {
+                    "body": [
+                        "What would ",
+                        1,
+                        " cost me?"
+                    ],
+                    "preconditions": "",
+                    "effects": "",
+                    "is_semantically_meaningful": false,
+                    "application_frequency": 1,
+                    "id": 1
+                },
+                {
+                    "body": [
+                        "Can you tell me the price?"
+                    ],
+                    "preconditions": "",
+                    "effects": "",
+                    "is_semantically_meaningful": false,
+                    "application_frequency": 1,
+                    "id": 2
+                },
+                {
+                    "body": [
+                        "What about the price?"
+                    ],
+                    "preconditions": "",
+                    "effects": "",
+                    "is_semantically_meaningful": false,
+                    "application_frequency": 1,
+                    "id": 3
+                }
+            ],
+            "is_start_symbol": false,
+            "name": "start",
+            "tags": [],
+            "expansions_are_complete_outputs": true,
+            "is_semantically_meaningful": false
+        },
+        "1": {
+            "production_rules": [
+                {
+                    "body": [
+                        "that"
+                    ],
+                    "preconditions": "",
+                    "effects": "",
+                    "is_semantically_meaningful": false,
+                    "application_frequency": 1,
+                    "id": 4
+                },
+                {
+                    "body": [
+                        "it"
+                    ],
+                    "preconditions": "",
+                    "effects": "",
+                    "is_semantically_meaningful": false,
+                    "application_frequency": 1,
+                    "id": 5
+                },
+                {
+                    "body": [
+                        "the {product1}"
+                    ],
+                    "preconditions": "",
+                    "effects": "",
+                    "is_semantically_meaningful": false,
+                    "application_frequency": 1,
+                    "id": 6
+                },
+                {
+                    "body": [
+                        "a {product1}"
+                    ],
+                    "preconditions": "",
+                    "effects": "",
+                    "is_semantically_meaningful": false,
+                    "application_frequency": 1,
+                    "id": 7
+                }
+            ],
+            "is_start_symbol": false,
+            "name": "subject",
+            "tags": [],
+            "expansions_are_complete_outputs": false,
+            "is_semantically_meaningful": false
+        },
+        "2": {
+            "production_rules": [
+                {
+                    "body": [
+                        0
+                    ],
+                    "preconditions": "",
+                    "effects": "",
+                    "is_semantically_meaningful": false,
+                    "application_frequency": 1.0,
+                    "id": 8
+                }
+            ],
+            "is_start_symbol": true,
+            "name": "START",
+            "tags": [],
+            "expansions_are_complete_outputs": true,
+            "is_semantically_meaningful": false
+        }
+    },
+    "id_to_tag": {}
+}

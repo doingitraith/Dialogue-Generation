@@ -2,10 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Expressionist;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public enum IntentId
 {
@@ -29,12 +31,16 @@ public enum IntentId
     NotBuy,
     OutOfStock,
     Outrage,
+    PriceInfo,
+    PriceMuch,
+    PriceLittle,
+    Quality,
     ReplyEnd,
     ReplyIntroduction,
     Sorry,
     Unhappy,
     UsageInfo,
-    Quality,
+    UsageHow,
     Water,
     Yes
 }
@@ -93,18 +99,19 @@ public class DialogueState : MonoBehaviour
         currentText = "";
         InitializeIntents();
 
+        int randIdx = Random.Range(0, 4);
         dialogueState = new List<Tuple<string, string>>()
         {
             new Tuple<string, string>("dayTime", "day"),
-            new Tuple<string, string>("feature", "core"),
-            new Tuple<string, string>("features", "cores"),
+            new Tuple<string, string>("feature", Intent.GetRandomFeature(randIdx)),
+            new Tuple<string, string>("features", Intent.GetRandomFeatures(randIdx)),
             new Tuple<string, string>("product1", "phone"),
             new Tuple<string, string>("products1", "phones"),
-            new Tuple<string, string>("detail1", "camera"),
-            new Tuple<string, string>("details1", "cameras"),
+            new Tuple<string, string>("detail1", Intent.GetRandomDetail(randIdx)),
+            new Tuple<string, string>("details1", Intent.GetRandomDetails(randIdx)),
             new Tuple<string, string>("duration", "days"),
             new Tuple<string, string>("time", "day"),
-            new Tuple<string, string>("amount", "10")
+            new Tuple<string, string>("amount", Intent.GetRandomDeliveryTime())
         };
         _generatedText = "";
         //_selectedGrammar = "introduction";
@@ -141,7 +148,7 @@ public class DialogueState : MonoBehaviour
 
     public void StartDialogue()
     {
-        userInterface.StartDialoueUI();
+        userInterface.StartDialoueUI(player.gender, npc.gender);
         ChangeSpeaker();
     }
 
@@ -178,6 +185,7 @@ public class DialogueState : MonoBehaviour
         
         List<string> mustHaveTags = GetMustHaveTagsforIntent(_currentIntent.Id);
         List<string> mustNotHaveTags = GetMustNotHaveTagsforIntent(_currentIntent.Id);
+        UpdateState(_currentIntent.Id);
         ExpressionistRequest request = new ExpressionistRequest(mustHaveTags, mustNotHaveTags,
             null, dialogueState);
         GetTextForIntent(_currentIntent, request);
@@ -196,8 +204,27 @@ public class DialogueState : MonoBehaviour
             case IntentId.Happy:{return new List<string>() {"mood:happy"};}
             case IntentId.Unhappy:{return new List<string>() {"mood:unhappy"};}
             case IntentId.Meh:{return new List<string>() {"mood:meh"};}
-            case IntentId.Much:{return new List<string>(){"amount:much"};}
-            case IntentId.Little:{return new List<string>(){"amount:little"};}
+            
+            case IntentId.Much:
+            case IntentId.PriceMuch:{return new List<string>(){"amount:much"};}
+            
+            case IntentId.Little:
+            case IntentId.PriceLittle:{return new List<string>(){"amount:little"};}
+
+            case IntentId.Introduction:
+            {
+                if(player.gender.Equals(Gender.Male))
+                    return new List<string>(){"gender:male"};
+                
+                return new List<string>(){"gender:female"};
+            }
+            case IntentId.ReplyIntroduction:
+            {
+                if(npc.gender.Equals(Gender.Male))
+                    return new List<string>(){"gender:male"};
+                
+                return new List<string>(){"gender:female"};
+            }
             default:{return null;}
         }
     }
@@ -209,9 +236,53 @@ public class DialogueState : MonoBehaviour
             case IntentId.Happy:{return new List<string>() {"mood:unhappy","mood:meh"};}
             case IntentId.Unhappy:{return new List<string>() {"mood:happy","mood:meh"};}
             case IntentId.Meh:{return new List<string>() {"mood:happy","mood:unhappy"};}
-            case IntentId.Much:{return new List<string>(){"amount:little"};}
-            case IntentId.Little:{return new List<string>(){"amount:much"};}
+            
+            case IntentId.Much:
+            case IntentId.PriceMuch:{return new List<string>(){"amount:little"};}
+            
+            
+            case IntentId.Little:
+            case IntentId.PriceLittle:{return new List<string>(){"amount:much"};}
+            
+            case IntentId.Introduction:
+            {
+                if(player.gender.Equals(Gender.Male))
+                    return new List<string>(){"gender:female"};
+                
+                return new List<string>(){"gender:male"};
+            }
+            case IntentId.ReplyIntroduction:
+            {
+                if(npc.gender.Equals(Gender.Male))
+                    return new List<string>(){"gender:female"};
+                
+                return new List<string>(){"gender:male"};
+            }
             default:{return null;}
+        }
+    }
+
+    private void UpdateState(IntentId id)
+    {
+        switch (id)
+        {
+            case IntentId.PriceMuch:
+            case IntentId.PriceLittle:
+            case IntentId.PriceInfo:
+            {
+                ChangeStateVariable("amount", Intent.GetRandomPrice());
+            }break;
+            case IntentId.Explain:
+            {
+                ChangeStateVariable("amount", Intent.GetRandomNumber());
+            }break;
+            case IntentId.Little:
+            case IntentId.Much:
+            {
+                ChangeStateVariable("amount", Intent.GetRandomDeliveryTime());
+            }break;
+            default:
+            break;
         }
     }
 
@@ -296,13 +367,19 @@ public class DialogueState : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    private void ChangeStateVariable(string variable, string value)
+    {
+        dialogueState.Remove(dialogueState.Find(t => t.Item1.Equals(variable)));
+        dialogueState.Add(new Tuple<string, string>(variable, value));
+    }
+
     private void InitializeIntents()
     {
         allIntents = new List<Intent>
         {
             new Intent()
             {
-                Id=IntentId.Agree, GrammarName = "agree", Label = "Agree"
+                Id=IntentId.Agree, GrammarName = "yes", Label = "Agree"
             },
             new Intent()
             {
@@ -320,11 +397,11 @@ public class DialogueState : MonoBehaviour
             },
             new Intent()
             {
-                Id=IntentId.Explain, GrammarName = "explain", Label = "Say a number"
+                Id=IntentId.Explain, GrammarName = "explain", Label = "Explain feature"
             },
             new Intent()
             {
-                Id=IntentId.ExplainMistake, GrammarName = "explainMistake", Label = "Explain a mistake" // TODO: create grammar
+                Id=IntentId.ExplainMistake, GrammarName = "mistake", Label = "Admit mistake"
             },
             new Intent()
             {
@@ -336,7 +413,7 @@ public class DialogueState : MonoBehaviour
             },
             new Intent()
             {
-                Id = IntentId.Introduction, GrammarName = "introduction", SentimentModifier = .01f, Label = "Greet"
+                Id = IntentId.ReplyIntroduction, GrammarName = "introductionPlayer", SentimentModifier = .01f, Label = "Greet back"
             },
             new Intent()
             {
@@ -376,7 +453,7 @@ public class DialogueState : MonoBehaviour
             },
             new Intent()
             {
-                Id=IntentId.Yes, GrammarName = "yes", Label = "Affirm"
+                Id=IntentId.Yes, GrammarName = "agree", Label = "Affirm"
             },
             new Intent()
             {
@@ -400,7 +477,7 @@ public class DialogueState : MonoBehaviour
             },
             new Intent()
             {
-                Id = IntentId.ReplyIntroduction, GrammarName = "replyIntroduction", SentimentModifier = .01f, Label = "Greet back"//, IsReaction = true
+                Id = IntentId.Introduction, GrammarName = "introductionNPC", SentimentModifier = .01f, Label = "Greet"//, IsReaction = true
             },
             new Intent()
             {
@@ -412,7 +489,23 @@ public class DialogueState : MonoBehaviour
             },
             new Intent()
             {
-                Id=IntentId.Quality, GrammarName = "quality", Label = "Speak about quality" // TODO: create grammar
+                Id=IntentId.Quality, GrammarName = "quality", Label = "Speak about quality"
+            },
+            new Intent()
+            {
+                Id=IntentId.PriceInfo, GrammarName = "priceInfo", Label = "Ask for price"
+            },
+            new Intent()
+            {
+                Id=IntentId.PriceMuch, GrammarName = "amountPrice", Label = "Mention high price"
+            },
+            new Intent()
+            {
+                Id=IntentId.PriceLittle, GrammarName = "amountPrice", Label = "Mention low price"
+            },
+            new Intent()
+            {
+                Id=IntentId.UsageHow, GrammarName = "howUse", Label = "Elaborate on usage"
             }
         };
 
@@ -431,6 +524,8 @@ public class DialogueState : MonoBehaviour
             {IntentId.Water, new List<Reply>() {new Reply(){Id = IntentId.Mood, ExpectancyValue = .0f}}},
             {IntentId.Yes, new List<Reply>() {new Reply(){Id = IntentId.Mood, ExpectancyValue = .0f}}},
             {IntentId.OutOfStock, new List<Reply>() {new Reply(){Id = IntentId.Mood, ExpectancyValue = .0f}}},
+            {IntentId.PriceMuch, new List<Reply>() {new Reply(){Id = IntentId.Mood, ExpectancyValue = .0f}}},
+            {IntentId.PriceLittle, new List<Reply>() {new Reply(){Id = IntentId.Mood, ExpectancyValue = .0f}}},
             
             // Replies
             {IntentId.Buy, new List<Reply>()
@@ -446,7 +541,8 @@ public class DialogueState : MonoBehaviour
             {
                 new Reply(){Id = IntentId.Sorry, ExpectancyValue = .4f},
                 new Reply(){Id = IntentId.Water, ExpectancyValue = .4f},
-                new Reply(){Id=IntentId.Explain, ExpectancyValue = .2f}
+                new Reply(){Id=IntentId.Quality, ExpectancyValue = .3f},
+                new Reply(){Id=IntentId.ExplainMistake, ExpectancyValue = .5f}
             }},
             {IntentId.FeatureInfo, new List<Reply>()
             {
@@ -465,19 +561,26 @@ public class DialogueState : MonoBehaviour
             {
                 new Reply(){Id = IntentId.Yes, ExpectancyValue = .5f},
                 new Reply(){Id = IntentId.No, ExpectancyValue = -1.0f},
-                new Reply(){Id=IntentId.Quality, ExpectancyValue = -.5f},
-                new Reply(){Id=IntentId.Explain, ExpectancyValue = -.2f}
+                new Reply(){Id=IntentId.Quality, ExpectancyValue = -.5f}
+                //new Reply(){Id=IntentId.Explain, ExpectancyValue = -.2f}
             }},
             {IntentId.UsageInfo, new List<Reply>()
             {
-                new Reply(){Id = IntentId.Yes, ExpectancyValue = .6f},
+                new Reply(){Id=IntentId.UsageHow, ExpectancyValue = .6f},
+                new Reply(){Id = IntentId.Yes, ExpectancyValue = .4f},
                 new Reply(){Id = IntentId.No, ExpectancyValue = -.8f},
                 new Reply(){Id=IntentId.Agree, ExpectancyValue = .4f}
-            }}, // TODO: Create grammar HOW
+            }},
             {IntentId.DurationInfo, new List<Reply>()
             {
                 new Reply(){Id = IntentId.Much, ExpectancyValue = -.5f},
                 new Reply(){Id = IntentId.Little, ExpectancyValue = .8f},
+                new Reply(){Id=IntentId.OutOfStock, ExpectancyValue = -.8f}
+            }},
+            {IntentId.PriceInfo, new List<Reply>()
+            {
+                new Reply(){Id = IntentId.PriceMuch, ExpectancyValue = -.5f},
+                new Reply(){Id = IntentId.PriceLittle, ExpectancyValue = .8f},
                 new Reply(){Id=IntentId.OutOfStock, ExpectancyValue = -.8f}
             }},
         };

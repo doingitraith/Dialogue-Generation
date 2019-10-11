@@ -1,0 +1,16 @@
+Total outputs	10
+Total expressible meanings	1
+Total terminal expansions of nonterminal symbols
+	start	10
+	subject	4
+	START	10
+Total terminal results of production rules
+	[[start]] --> How much would [[subject]] cost?	4
+	[[start]] --> What would [[subject]] cost me?	4
+	[[start]] --> Can you tell me the price?	1
+	[[start]] --> What about the price?	1
+	[[subject]] --> that	1
+	[[subject]] --> it	1
+	[[subject]] --> the {product1}	1
+	[[subject]] --> {product1}	1
+	[[START]] --> [[start]]	10

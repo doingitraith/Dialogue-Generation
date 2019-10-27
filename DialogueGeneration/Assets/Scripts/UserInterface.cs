@@ -185,4 +185,9 @@ public class UserInterface : MonoBehaviour
         slider.value = targetValue;
         _isSliding = false;
     }
+
+    public void OpenURL(string url)
+    {
+        Application.OpenURL(url);
+    }
 }

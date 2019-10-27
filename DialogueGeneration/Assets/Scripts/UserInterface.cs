@@ -22,6 +22,7 @@ public class UserInterface : MonoBehaviour
     public event DialogueAction OnGenerateDialogue;
     public event DialogueAction OnChangeSpeaker;
     private Text _dialogueText;
+    private Button _skipButton;
     private Coroutine _typingCoroutine;
     private Coroutine _slidingCoroutine;
     private string _currentText;
@@ -68,16 +69,17 @@ public class UserInterface : MonoBehaviour
         npcDialogueArea.SetActive(!isPlayerTurn);
         playerDialogueArea.SetActive(isPlayerTurn);
         _dialogueText = GameObject.FindWithTag("Text").GetComponent<Text>();
+        _skipButton = GameObject.FindWithTag("Skip").GetComponent<Button>();
+        //_skipButton.interactable = false;
 
         if (_isPlayerTurn)
         {
             _dialogueText.text = _currentText;
-            Button skipButton = GameObject.Find("SkipButton").GetComponent<Button>();
             int numOfReplies = speaker.replyOptions.Count;
 
             if (numOfReplies > 0)
             {
-                skipButton.interactable = false;
+                _skipButton.interactable = false;
                 ActivateReplyButtons(numOfReplies);
             }
         }
@@ -122,12 +124,13 @@ public class UserInterface : MonoBehaviour
     public void PresentText(bool isPlayerTurn, string currentText)
     {
         _currentText = currentText;
-        GameObject.Find("SkipButton").GetComponent<Button>().interactable = true;
+        _skipButton.interactable = true;
         _typingCoroutine = StartCoroutine(TypeText(_currentText));
     }
 
     public void SkipText()
     {
+        
         if (_isTyping)
         {
             StopCoroutine(_typingCoroutine);
@@ -138,6 +141,8 @@ public class UserInterface : MonoBehaviour
         {
             OnChangeSpeaker?.Invoke();
         }
+        
+        //OnChangeSpeaker?.Invoke();
     }
 
     public void MakeTextBigger()
@@ -165,6 +170,7 @@ public class UserInterface : MonoBehaviour
             yield return new WaitForSeconds(typeDelay);
         }
 
+        _skipButton.interactable = true;
         _isTyping = false;
     }
     

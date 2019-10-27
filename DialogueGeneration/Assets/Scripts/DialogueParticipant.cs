@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -86,7 +87,7 @@ public class DialogueParticipant : MonoBehaviour
 
         if (modifier > .0f)
             _positiveCounter++;
-        
+
         moodValue = Mathf.Clamp(moodValue+modifier, -1.0f, 1.0f);
         if (moodValue <= -1.0f)
             AbortDialogue();

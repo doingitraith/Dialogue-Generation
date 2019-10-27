@@ -210,6 +210,9 @@ public class DialogueState : MonoBehaviour
             
             case IntentId.Little:
             case IntentId.PriceLittle:{return new List<string>(){"amount:little"};}
+            
+            case IntentId.Buy:{return new List<string>(){"decision:yes"};}
+            case IntentId.NotBuy:{return new List<string>(){"decision:no"};}
 
             case IntentId.Introduction:
             {
@@ -243,6 +246,9 @@ public class DialogueState : MonoBehaviour
             
             case IntentId.Little:
             case IntentId.PriceLittle:{return new List<string>(){"amount:much"};}
+            
+            case IntentId.Buy:{return new List<string>(){"decision:no"};}
+            case IntentId.NotBuy:{return new List<string>(){"decision:yes"};}
             
             case IntentId.Introduction:
             {
@@ -338,10 +344,11 @@ public class DialogueState : MonoBehaviour
     private void GetTextForIntent(Intent intent, ExpressionistRequest request)
     {
         pythonEndpoint.ExpressionistRequestCode(intent?.ToString(), request.mustHaveTags,request.mustNotHaveTags, request.scoringMetric, request.state);
-        
+
         while (!_isTextGenerated)
-            _generatedText = pythonEndpoint.currentGeneratedString;
+            ;
 		
+        //Debug.Log((isPlayerTurn?"PC: ":"NPC: ") + intent.ToString()+": "+_generatedText);
         _isTextGenerated = false;
 		
         pythonEndpoint.ExecuteSentimentAnalysis(_generatedText);

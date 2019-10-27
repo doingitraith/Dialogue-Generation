@@ -2637,6 +2637,11 @@ PrefabInstance:
       propertyPath: m_FontData.m_MinSize
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1223444241345309007, guid: 8207230602c60ec47942d0d252fd24d6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Skip
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8207230602c60ec47942d0d252fd24d6, type: 3}
 --- !u!1001 &3524768862005439586
@@ -3012,6 +3017,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.30709326
+      objectReference: {fileID: 0}
+    - target: {fileID: 7771490675602441046, guid: ea78b7481540811409db6d7715f904d6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Skip
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea78b7481540811409db6d7715f904d6, type: 3}

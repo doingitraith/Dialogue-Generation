@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using Expressionist;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
+/// <summary>
+/// An enum of all intent types
+/// </summary>
 public enum IntentId
 {
     Agree,
@@ -45,17 +45,35 @@ public enum IntentId
     Yes
 }
 
+/// <summary>
+/// A struct for a reply consisting of an intent Id and an expectancy value
+/// </summary>
 public struct Reply
 { 
     public IntentId Id;
     public float ExpectancyValue;
 }
 
+/// <summary>
+/// A struct for a Expressionist request for generating text
+/// </summary>
 public struct ExpressionistRequest
 {
+    /// <summary>
+    /// A list of must have tags
+    /// </summary>
     public readonly List<string> mustHaveTags;
+    /// <summary>
+    /// A list of prohibited tags
+    /// </summary>
     public readonly List<string> mustNotHaveTags;
+    /// <summary>
+    /// A scoring metric as a list of "tag, value" tuples
+    /// </summary>
     public readonly List<Tuple<string, int>> scoringMetric;
+    /// <summary>
+    /// The current state as a list of "variable, value" tuples
+    /// </summary>
     public readonly List<Tuple<string, string>> state;
 
     public ExpressionistRequest(List<string> mustHaveTags, List<string> mustNotHaveTags, 
@@ -68,30 +86,83 @@ public struct ExpressionistRequest
     }
 }
 
+/// <summary>
+/// Dialogue system to process a dialogue
+/// </summary>
 public class DialogueState : MonoBehaviour
 {
+    /// <summary>
+    /// the PythonEndpoint to handle communction with the Python console
+    /// </summary>
     public PythonEndpoint pythonEndpoint;
+    /// <summary>
+    /// Helper flag to determine the current player
+    /// </summary>
     public bool isPlayerTurn;
+    /// <summary>
+    /// A dictionary of intents and their reactions
+    /// </summary>
     public Dictionary<IntentId, List<Reply>> reactions;
+    /// <summary>
+    /// a list of all intents
+    /// </summary>
     public static List<Intent> allIntents;
+    /// <summary>
+    /// the current shown text
+    /// </summary>
     public string currentText;
+    /// <summary>
+    /// The player character
+    /// </summary>
     public DialogueParticipant player;
+    /// <summary>
+    /// The NPC character
+    /// </summary>
     public DialogueParticipant npc;
+    /// <summary>
+    /// The user interface
+    /// </summary>
     public UserInterface userInterface;
+    /// <summary>
+    /// The current Expressionist state
+    /// </summary>
     public List<Tuple<string, string>> dialogueState;
+    /// <summary>
+    /// The camera controller
+    /// </summary>
     public CameraContoller cameraContoller;
 
+    /// <summary>
+    /// The newly generated text
+    /// </summary>
     private string _generatedText;
+    /// <summary>
+    /// The current calculated sentiment
+    /// </summary>
     private Sentiment _sentiment;
-    //private string _selectedGrammar;
+    /// <summary>
+    /// Helper flag to determine newly updated text
+    /// </summary>
     private bool _isUpdated;
+    /// <summary>
+    /// Helper flag to determine newly generated text
+    /// </summary>
     private bool _isTextGenerated;
+    /// <summary>
+    /// The currently presented/ intent
+    /// </summary>
     private Intent _currentIntent;
+    /// <summary>
+    /// Helper flag to determine if the current text is the last in a dialogue
+    /// </summary>
     private bool _isLastText;
 
-
+    /// <summary>
+    /// Init the dialogue
+    /// </summary>
     void Start()
     {
+        // Get the single PythonEndpoint
         pythonEndpoint = FindObjectOfType<PythonEndpoint>();
         pythonEndpoint.OnTextGenerated += UpdateGeneratedText;
         pythonEndpoint.OnSentimentProcessed += UpdateSentiments;
@@ -99,6 +170,7 @@ public class DialogueState : MonoBehaviour
         currentText = "";
         InitializeIntents();
 
+        // init the state variables needed by the Expressionist grammars
         int randIdx = Random.Range(0, 4);
         dialogueState = new List<Tuple<string, string>>()
         {
@@ -113,8 +185,8 @@ public class DialogueState : MonoBehaviour
             new Tuple<string, string>("time", "day"),
             new Tuple<string, string>("amount", Intent.GetRandomDeliveryTime())
         };
+        // init helper variables
         _generatedText = "";
-        //_selectedGrammar = "introduction";
         _isUpdated = false;
         _isTextGenerated = false;
         _isLastText = false;
@@ -124,11 +196,14 @@ public class DialogueState : MonoBehaviour
     
     void Update()
     {
+        // if a new text is generated AND the sentiment is calculated
         if (_isUpdated)
         {
+            // set the text and sentiment
             currentText = _generatedText;
             _currentIntent.SentimentModifier = _sentiment.compound;
             
+            // set the speakers
             DialogueParticipant speaker = npc;
             DialogueParticipant otherSpeaker = player;
             if (isPlayerTurn)
@@ -137,23 +212,34 @@ public class DialogueState : MonoBehaviour
                 otherSpeaker = npc;
             }
             
+            // update the mood and the slider with the sentiment
             otherSpeaker.UpdateMood(_currentIntent);
             if (isPlayerTurn)
                 userInterface.UpdateSlider(otherSpeaker.moodValue);
             
+            // present the generated text
             userInterface.PresentText(isPlayerTurn, currentText);
             _isUpdated = false;
         }
     }
 
+    /// <summary>
+    /// Start a new dialogue
+    /// </summary>
     public void StartDialogue()
     {
-        userInterface.StartDialoueUI(player.gender, npc.gender);
+        // start the dialogue in the user interface
+        userInterface.StartDialogueUI(player.gender, npc.gender);
+        // initially perform one player change
         ChangeSpeaker();
     }
 
+    /// <summary>
+    /// Switches the current player (Player<>NPC)
+    /// </summary>
     private void ChangeSpeaker()
     {
+        // if the text is the last text, end the dialogue after
         if (_isLastText)
         {
             userInterface.EndDialogueUI();
@@ -161,42 +247,63 @@ public class DialogueState : MonoBehaviour
         }
         else
         {
+            // switch the player
             if (_currentIntent == null || !_currentIntent.IsReaction)
             {
                 isPlayerTurn = !isPlayerTurn;
                 DialogueParticipant speaker = isPlayerTurn ? player : npc;
+                // switch the camera to view the new player
                 cameraContoller.SwitchPosition(isPlayerTurn);
+                // prepare the UI for the new player
                 userInterface.PrepareInterface(isPlayerTurn, speaker);
 
+                // generate NPC dialogue
                 if (!isPlayerTurn)
                     GenerateDialogue();
             }
+            // generate player dialogue
             else
                 GenerateDialogue();
         }
     }
 
+    /// <summary>
+    /// Initiates a new text generation
+    /// </summary>
     private void GenerateDialogue()
     {
+        // Determine the player
         DialogueParticipant speaker = isPlayerTurn ? player : npc;
+        // get the next intent for the player
         _currentIntent = GetNextIntent(speaker);
         if (_currentIntent == null)
             return;
         
+        // get the tags for the generation request
         List<string> mustHaveTags = GetMustHaveTagsforIntent(_currentIntent.Id);
         List<string> mustNotHaveTags = GetMustNotHaveTagsforIntent(_currentIntent.Id);
+        // update the state for the generation request
         UpdateState(_currentIntent.Id);
+        // create a new Expressionist request
         ExpressionistRequest request = new ExpressionistRequest(mustHaveTags, mustNotHaveTags,
             null, dialogueState);
         GetTextForIntent(_currentIntent, request);
 
+        // remove the intent from the speaker backlog
         speaker.CheckGoals(_currentIntent);
+        // add potential reactions to the backlog
         AddReactionIntents(_currentIntent.Id);
 
+        // Determine if the intent is the last text
         if (_currentIntent.Id.Equals(IntentId.ReplyEnd))
             _isLastText = true;
     }
 
+    /// <summary>
+    /// Determine the required tags for given intents
+    /// </summary>
+    /// <param name="id">the intent Id</param>
+    /// <returns>a list of required tags</returns>
     private List<string> GetMustHaveTagsforIntent(IntentId id)
     {
         switch (id)
@@ -232,6 +339,11 @@ public class DialogueState : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Determine the prohibited tags for given intents
+    /// </summary>
+    /// <param name="id">the intent Id</param>
+    /// <returns>a list of prohibited tags</returns>
     private List<string> GetMustNotHaveTagsforIntent(IntentId id)
     {
         switch (id)
@@ -268,6 +380,10 @@ public class DialogueState : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Update the state variables for a given intent
+    /// </summary>
+    /// <param name="id">The intent Id</param>
     private void UpdateState(IntentId id)
     {
         switch (id)
@@ -292,45 +408,67 @@ public class DialogueState : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Add reaction intents to the player backlog or add replies to the player backlog
+    /// </summary>
+    /// <param name="reactTo">The intent Id to react to</param>
     private void AddReactionIntents(IntentId reactTo)
     {
         if (!reactions.ContainsKey(reactTo))
             return;
         
+        // find the replies for a given intent
         List<Reply> replies = reactions[reactTo];
         if (replies != null)
         {
+            // add replies to player backlog
             if (isPlayerTurn)
                 replies.ForEach(i => npc.currentIntentBacklog.Push(i));
             else
             {
+                // add reactions to NPC backlog
                 player.replyOptions.Clear();
                 replies.ForEach(i => player.replyOptions.Add(i));
             }
         }
     }
 
+    /// <summary>
+    /// Gets the next intent from the speaker backlog
+    /// </summary>
+    /// <param name="speaker"></param>
+    /// <returns></returns>
     private Intent GetNextIntent(DialogueParticipant speaker)
     {
         if (speaker.currentIntentBacklog.Count == 0)
             return null;
         
+        // Get the intent
         Reply r = speaker.currentIntentBacklog.Pop();
         Reply reply = new Reply() {Id = r.Id, ExpectancyValue = r.ExpectancyValue};
         
+        // Determine the mood intent based on the current mood
         if (r.Id.Equals(IntentId.Mood))
             reply = GetMoodBasedOnIntent(speaker, reply);
         
+        // Create new intent
         Intent intent = allIntents.Find(i => i.Id.Equals(reply.Id));
         intent.ExpectancyValue = r.ExpectancyValue;
         return intent;
     }
 
+    /// <summary>
+    /// Adjust the mood based on the speaker mood
+    /// </summary>
+    /// <param name="speaker">The current player</param>
+    /// <param name="reply">The reply to adjust the mood for</param>
+    /// <returns></returns>
     private Reply GetMoodBasedOnIntent(DialogueParticipant speaker, Reply reply)
     {
         float mood = speaker.moodValue;
         float expectancy = reply.ExpectancyValue;
         
+        // Determine the mood
         if (mood >= .4f) // mood happy
             reply.Id = IntentId.Happy;
         else if (mood >= -.3f && mood < .4f) // mood neutral
@@ -341,32 +479,48 @@ public class DialogueState : MonoBehaviour
         return reply;
     }
 
+    /// <summary>
+    /// Initiate new text generation for an intent
+    /// </summary>
+    /// <param name="intent">The intent to generate text for</param>
+    /// <param name="request">The Expressionist request</param>
     private void GetTextForIntent(Intent intent, ExpressionistRequest request)
     {
+        // Send request to Python
         pythonEndpoint.ExpressionistRequestCode(intent?.ToString(), request.mustHaveTags,request.mustNotHaveTags, request.scoringMetric, request.state);
 
+        // wait for Python to complete text generation
         while (!_isTextGenerated)
             ;
 		
-        //Debug.Log((isPlayerTurn?"PC: ":"NPC: ") + intent.ToString()+": "+_generatedText);
         _isTextGenerated = false;
 		
+        // Start sentiment analysis for generated text
         pythonEndpoint.ExecuteSentimentAnalysis(_generatedText);
     }
     
+    /// <summary>
+    /// Update the current text with the newly generated text
+    /// </summary>
     private void UpdateGeneratedText()
     {
         _generatedText = pythonEndpoint.currentGeneratedString;
         _isTextGenerated = true;
-        //isUpdated = true;
     }
 
+    /// <summary>
+    /// Update the current sentiment anlysis with the newly calculated values
+    /// </summary>
     private void UpdateSentiments()
     {
         _sentiment = pythonEndpoint.currentSentiment;
         _isUpdated = true;
     }
 
+    /// <summary>
+    /// Zoom out of the scene and reload game
+    /// </summary>
+    /// <returns></returns>
     public IEnumerator EndGame()
     {
         cameraContoller.MoveOut();
@@ -374,14 +528,25 @@ public class DialogueState : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    /// <summary>
+    /// Update a state variable with a new value
+    /// </summary>
+    /// <param name="variable">the name of the variable</param>
+    /// <param name="value">the new value of the variable</param>
     private void ChangeStateVariable(string variable, string value)
     {
         dialogueState.Remove(dialogueState.Find(t => t.Item1.Equals(variable)));
         dialogueState.Add(new Tuple<string, string>(variable, value));
     }
 
+    /// <summary>
+    /// Initialize all intents with an Id, a grammar file name and a label,
+    /// all reactions as replies with a single reaction intent
+    /// and all replies with a a list of reply intents
+    /// </summary>
     private void InitializeIntents()
     {
+        // intent initialization
         allIntents = new List<Intent>
         {
             new Intent()
@@ -516,6 +681,7 @@ public class DialogueState : MonoBehaviour
             }
         };
 
+        // reaction and reply initialization
         reactions = new Dictionary<IntentId, List<Reply>>
         {
             // Reactions

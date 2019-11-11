@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,6 +6,9 @@ using Expressionist;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// This class is for test purposes only
+/// </summary>
 [ExecuteInEditMode]
 public class DemoPanel : MonoBehaviour
 {

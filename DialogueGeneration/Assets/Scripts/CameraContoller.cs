@@ -1,11 +1,19 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraContoller : MonoBehaviour
 {
+    /// <summary>
+    /// NPC camera position
+    /// </summary>
     public Transform npcPosition;
+    /// <summary>
+    /// Player camera position
+    /// </summary>
     public Transform playerPosition;
+    /// <summary>
+    /// Scene overview position
+    /// </summary>
     public Transform officePosition;
     
     // Start is called before the first frame update
@@ -20,6 +28,10 @@ public class CameraContoller : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// Turns the camera from one character to the other
+    /// </summary>
+    /// <param name="isPlayerTurn">indicates if it is the player's turn or the NPC's turn</param>
     public void SwitchPosition(bool isPlayerTurn)
     {
         Transform t = gameObject.transform;
@@ -32,6 +44,9 @@ public class CameraContoller : MonoBehaviour
             t.rotation, npcPosition.rotation, 1.0f));
     }
 
+    /// <summary>
+    /// Zooms out of the scene
+    /// </summary>
     public void MoveOut()
     {
         Transform t = gameObject.transform;
@@ -39,6 +54,15 @@ public class CameraContoller : MonoBehaviour
             t.rotation, officePosition.rotation, 1.5f));
     }
 
+    /// <summary>
+    /// Coroutine for moving and rotating the camera the camera to face a certain point
+    /// </summary>
+    /// <param name="startPos">Start position</param>
+    /// <param name="targetPos">Target position</param>
+    /// <param name="startRotation">Start rotation</param>
+    /// <param name="targetRotation">Target rotation</param>
+    /// <param name="duration">Duration in seconds</param>
+    /// <returns></returns>
     public IEnumerator MoveCamera(Vector3 startPos, Vector3 targetPos,
         Quaternion startRotation, Quaternion targetRotation, float duration)
     {
